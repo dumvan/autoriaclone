@@ -10,10 +10,10 @@ class AnnouncementPresenter{
         announcements: AnnouncementType[],
         total: number,
         query: AnnouncementQueryType,
-        res: (res: AnnouncementType) => unknown
+        res?: (res: AnnouncementType) => unknown
     ) {
         const data = await Promise.all(announcements.map(async (announcement) => {
-            const presenter = await res(announcement)
+            const presenter = res ? await res(announcement) : await this.res(announcement)
             if(!presenter){
                 total -= 1
             }

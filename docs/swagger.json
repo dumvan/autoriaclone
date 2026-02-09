@@ -233,7 +233,7 @@
           "email",
           "password",
           "city",
-          "region"
+          "region_id"
         ],
         "properties": {
           "name": {
@@ -267,7 +267,7 @@
             "maxLength": 30,
             "description": "Кирилиця"
           },
-          "region": {
+          "region_id": {
             "type": "integer",
             "description": "ID регіону"
           },
@@ -406,6 +406,28 @@
           }
         }
       },
+      "ShortDealership": {
+        "type": "object",
+        "description": "Коротка інформація про автосалон",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "is_verified": {
+            "type": "boolean"
+          },
+          "rating": {
+            "type": "number"
+          }
+        }
+      },
       "DealershipListResponse": {
         "type": "object",
         "properties": {
@@ -522,7 +544,7 @@
             "format": "uuid"
           },
           "dealership": {
-            "$ref": "#/components/schemas/Dealership"
+            "$ref": "#/components/schemas/ShortDealership"
           },
           "role": {
             "type": "string",
@@ -658,9 +680,9 @@
           }
         }
       },
-      "Announcement": {
+      "AnnouncementBase": {
         "type": "object",
-        "description": "Базова модель оголошення (публічна)",
+        "description": "Базова модель оголошення (тільки дані про авто і ціну, без контактів)",
         "properties": {
           "id": {
             "type": "string",
@@ -702,33 +724,79 @@
           },
           "vehicle": {
             "$ref": "#/components/schemas/Vehicle"
+          }
+        }
+      },
+      "Announcement": {
+        "description": "Публічне оголошення (може містити контакти юзера АБО салону)",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/AnnouncementBase"
           },
-          "user": {
-            "$ref": "#/components/schemas/AnnouncementUser"
-          },
-          "dealership": {
+          {
             "type": "object",
-            "nullable": true,
             "properties": {
-              "id": {
-                "type": "string",
-                "format": "uuid"
+              "user": {
+                "nullable": true,
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/AnnouncementUser"
+                  }
+                ]
               },
-              "name": {
-                "type": "string"
-              },
-              "address": {
-                "type": "string"
-              },
-              "is_verified": {
-                "type": "boolean"
-              },
-              "rating": {
-                "type": "number"
+              "dealership": {
+                "nullable": true,
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ShortDealership"
+                  }
+                ]
               }
             }
           }
-        }
+        ]
+      },
+      "MyAnnouncement": {
+        "description": "Оголошення для власника (містить dealership, але приховує user)",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/AnnouncementBase"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "dealership": {
+                "nullable": true,
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/ShortDealership"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "DealershipAnnouncement": {
+        "description": "Оголошення для автосалона (містить user, але приховує dealership)",
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/AnnouncementBase"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "user": {
+                "nullable": true,
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/PublicUser"
+                  }
+                ]
+              }
+            }
+          }
+        ]
       },
       "FullAnnouncement": {
         "allOf": [
@@ -759,11 +827,60 @@
       },
       "AnnouncementListResponse": {
         "type": "object",
+        "description": "Список для публічного каталогу",
         "properties": {
           "data": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Announcement"
+            }
+          },
+          "total": {
+            "type": "integer"
+          },
+          "page": {
+            "type": "integer"
+          },
+          "limit": {
+            "type": "integer"
+          },
+          "skip": {
+            "type": "integer"
+          }
+        }
+      },
+      "MyAnnouncementListResponse": {
+        "type": "object",
+        "description": "Список для власника (без контактів user/dealership)",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MyAnnouncement"
+            }
+          },
+          "total": {
+            "type": "integer"
+          },
+          "page": {
+            "type": "integer"
+          },
+          "limit": {
+            "type": "integer"
+          },
+          "skip": {
+            "type": "integer"
+          }
+        }
+      },
+      "DealershipAnnouncementListResponse": {
+        "type": "object",
+        "description": "Список оголошень автосалону (без поля dealership, бо воно зайве)",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DealershipAnnouncement"
             }
           },
           "total": {
@@ -939,7 +1056,7 @@
           "title",
           "description",
           "city",
-          "region",
+          "region_id",
           "price",
           "currency",
           "vehicle"
@@ -958,7 +1075,7 @@
             "type": "string",
             "description": "Кирилиця, 3-30 символів"
           },
-          "region": {
+          "region_id": {
             "type": "integer",
             "description": "ID регіону"
           },
@@ -1027,7 +1144,7 @@
           "email",
           "password",
           "city",
-          "region"
+          "region_id"
         ],
         "properties": {
           "name": {
@@ -1048,7 +1165,7 @@
           "city": {
             "type": "string"
           },
-          "region": {
+          "region_id": {
             "type": "integer"
           },
           "gender": {
@@ -2075,7 +2192,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AnnouncementListResponse"
+                  "$ref": "#/components/schemas/MyAnnouncementListResponse"
                 }
               }
             }
@@ -3529,7 +3646,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AnnouncementListResponse"
+                  "$ref": "#/components/schemas/DealershipAnnouncementListResponse"
                 }
               }
             }
