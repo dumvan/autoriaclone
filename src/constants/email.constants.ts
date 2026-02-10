@@ -2,11 +2,11 @@ import {EmailEnum} from "../enums/generalEnums/email.enum.ts";
 
 export const emailConstants = {
     [EmailEnum.WELCOME]: {
-        subject: "Welcome to our platform",
+        subject: "Ласкаво просимо на нашу платформу",
         template: "welcome"
     },
     [EmailEnum.FORGOT_PASSWORD]: {
-        subject: "Forgot password",
+        subject: "Відновлення пароля",
         template: "forgot.password"
     }
 }

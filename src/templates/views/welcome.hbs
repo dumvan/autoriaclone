@@ -1,20 +1,29 @@
 <table style="width: 100%; padding: 45px 35px; box-sizing: border-box">
     <tr>
         <td style="font-size: 18px; text-align: center;">
-            Welcome on our platform, {{name}} {{surname}}!
+            Ласкаво просимо на нашій платформі, {{name}} {{surname}}!
         </td>
     </tr>
     <tr>
         <td style="text-align: center;">
             <p style="margin: 17px 0 5px;">
-                You need submit your email, please click on button
+                Для підтвердження пошти, будь ласка, натисніть на кнопку нижче.
             </p>
-            <a style="margin-bottom: 5px" href="http://{{app_host}}:{{app_port}}/auth/activate/{{action_token}}">VERIFY</a>
-        </td>
-    </tr>
-    <tr>
-        <td style="text-align: center;">
-            <button>SUBMIT</button>
+            <a href="http://{{app_host}}:{{app_port}}/auth/activate/{{action_token}}" style="
+                     display: inline-block;
+                     text-decoration: none;
+                     cursor: pointer;
+                     background-color: #f0f0f0;
+                     color: #000000;
+                     padding: 10px 20px;
+                     margin-top: 5px;
+                     border: 1px solid #ccc;
+                     border-radius: 4px;
+                     font-family: Arial, sans-serif;
+                     text-align: center;
+                   ">
+                Підтвердити
+            </a>
         </td>
     </tr>
 </table>
