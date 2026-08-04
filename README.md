@@ -2,10 +2,6 @@
 
 Серверна частина (Backend) веб-платформи для продажу та купівлі транспортних засобів. Проєкт реалізує REST API архітектуру для взаємодії між клієнтською частиною та базою даних.
 
-## Посилання
-* **Репозиторій:** https://github.com/St1ve42/autoriaclone.git
-* **Хост (AWS):** http://autoriaclone.eu-north-1.elasticbeanstalk.com
-
 ## Стек технологій
 
 **Основні:**
@@ -55,17 +51,20 @@ npm install
 **3.** Налаштувати змінні оточення за зразком файлу: .env.example
 
 **4.** Для запуску проєкту в режимі розробника:
+
+
+**4.** Запуск проєкту:
+
+Режим розробки (Development):
 ```
 npm run start:dev
 ```
-або ж скрипт
-```
-start:dev
-```
-**5** Для запуску скомпільнованого проєкту:
+
+Збірка та запуск продакшн-версії (Production):
+
 ```
 npm run build
-npm start
+npm run start
 ```
 
 Особливості тестування (Активація акаунту)
@@ -83,5 +82,4 @@ npm start
 Посилання: https://www.postman.com/cryosat-astronomer-37024884-1799691/workspace/autoriaclone
 
 ## Swagger документація
-Посилання: http://autoriaclone.eu-north-1.elasticbeanstalk.com/docs
-В разі запуску проєкту на localhost документація доступна за шляхом /docs 
+На localhost документація доступна за шляхом /docs 
