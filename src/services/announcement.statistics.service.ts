@@ -1,9 +1,9 @@
-import {announcementStatisticsRepository} from "../repository/announcement.statistics.repository.ts";
-import {AnnouncementStatistics} from "../../prisma/src/generated/prisma/client.ts";
-import {announcementViewsDayRepository} from "../repository/announcement.views.day.repository.ts";
-import {StatisticsType} from "../types/StatisticsType.ts";
-import {announcementService} from "./announcement.service.ts";
-import {averagePricesRepository} from "../repository/average.price.repository.ts";
+import {announcementStatisticsRepository} from "../repository/announcement.statistics.repository.js";
+import {AnnouncementStatistics} from "../../prisma/src/generated/prisma/client.js";
+import {announcementViewsDayRepository} from "../repository/announcement.views.day.repository.js";
+import {StatisticsType} from "../types/StatisticsType.js";
+import {announcementService} from "./announcement.service.js";
+import {averagePricesRepository} from "../repository/average.price.repository.js";
 
 class AnnouncementStatisticsService {
     private async getViewStatistics(announcementId: string): Promise<Pick<StatisticsType, "views">>{

@@ -1,10 +1,10 @@
 import {Router} from "express";
-import {announcementController} from "../../controllers/announcement.controller.ts";
-import {commonMiddleware} from "../../middlewares/common.middleware.ts";
-import {QueryValidator} from "../../vaildators/query.validator.ts";
-import {AnnouncementType} from "../../types/AnnouncementType.ts";
-import {announcementService} from "../../services/announcement.service.ts";
-import {AnnouncementPermissionsEnum} from "../../enums/permissionEnums/announcement.permissions.enum.ts";
+import {announcementController} from "../../controllers/announcement.controller.js";
+import {commonMiddleware} from "../../middlewares/common.middleware.js";
+import {QueryValidator} from "../../vaildators/query.validator.js";
+import {AnnouncementType} from "../../types/AnnouncementType.js";
+import {announcementService} from "../../services/announcement.service.js";
+import {AnnouncementPermissionsEnum} from "../../enums/permissionEnums/announcement.permissions.enum.js";
 
 const router = Router()
 

@@ -1,9 +1,9 @@
-import {Vehicle} from "../models/mongoose/vehicle.model.ts";
-import type {MakeType, ModelListType, VehicleType, ModelResponseType, ModelType} from "../types/VehicleType.ts";
-import {BaseQueryType} from "../types/QueryType.ts";
+import {Vehicle} from "../models/mongoose/vehicle.model.js";
+import type {MakeType, ModelListType, VehicleType, ModelResponseType, ModelType} from "../types/VehicleType.js";
+import {BaseQueryType} from "../types/QueryType.js";
 import {FilterQuery, PipelineStage, UpdateQuery} from "mongoose";
 import {ObjectId} from "mongodb";
-import {CreateReportedVehicleDTOType, ReportedVehicleModelType, ReportedVehicleType} from "../types/ReportedVehicleType.ts";
+import {CreateReportedVehicleDTOType, ReportedVehicleModelType, ReportedVehicleType} from "../types/ReportedVehicleType.js";
 
 class VehicleRepository{
     public async getMakeList(query: BaseQueryType): Promise<[MakeType[], number]>{

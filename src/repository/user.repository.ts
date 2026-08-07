@@ -1,9 +1,9 @@
-import type {UserCreateInput, UserOrderByWithRelationInput, UserUpdateInput, UserWhereInput} from "../../prisma/src/generated/prisma/models/User.ts";
-import {prisma} from "../../prisma/prisma.client.ts";
-import type {User} from "../../prisma/src/generated/prisma/client.ts";
-import type {UserQueryType} from "../types/QueryType.ts";
-import type {UserListReturnType} from "../types/ListReturnType.ts";
-import {UserWithIncludedPermissionType, UserWithIncludedRegionAndRoleType} from "../types/UserWithIncludeDataType.ts";
+import type {UserCreateInput, UserOrderByWithRelationInput, UserUpdateInput, UserWhereInput} from "../../prisma/src/generated/prisma/models/User.js";
+import {prisma} from "../../prisma/prisma.client.js";
+import type {User} from "../../prisma/src/generated/prisma/client.js";
+import type {UserQueryType} from "../types/QueryType.js";
+import type {UserListReturnType} from "../types/ListReturnType.js";
+import {UserWithIncludedPermissionType, UserWithIncludedRegionAndRoleType} from "../types/UserWithIncludeDataType.js";
 
 class UserRepository{
     public async getList(query: UserQueryType): Promise<UserListReturnType> {

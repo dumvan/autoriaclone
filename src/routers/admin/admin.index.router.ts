@@ -1,13 +1,13 @@
 import {Router} from "express";
-import {adminUsersRouter} from "./admin.users.router.ts";
-import {adminDealershipsRouter} from "./admin.dealerships.router.ts";
-import {strictAuthMiddleware} from "../../middlewares/strict.auth.middleware.ts";
-import {adminMiddleware} from "../../middlewares/admin.middleware.ts";
-import {userMiddleware} from "../../middlewares/user.middleware.ts";
-import {adminAnnouncementsRouter} from "./admin.announcements.router.ts";
-import {adminSubscriptionsRouter} from "./admin.subscriptions.router.ts";
-import {adminRolesRouter} from "./admin.roles.router.ts";
-import {adminReportedVehicleRouter} from "./admin.reported.vehicle.router.ts";
+import {adminUsersRouter} from "./admin.users.router.js";
+import {adminDealershipsRouter} from "./admin.dealerships.router.js";
+import {strictAuthMiddleware} from "../../middlewares/strict.auth.middleware.js";
+import {adminMiddleware} from "../../middlewares/admin.middleware.js";
+import {userMiddleware} from "../../middlewares/user.middleware.js";
+import {adminAnnouncementsRouter} from "./admin.announcements.router.js";
+import {adminSubscriptionsRouter} from "./admin.subscriptions.router.js";
+import {adminRolesRouter} from "./admin.roles.router.js";
+import {adminReportedVehicleRouter} from "./admin.reported.vehicle.router.js";
 
 const router = Router()
 

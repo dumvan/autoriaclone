@@ -1,8 +1,8 @@
-import {DealershipReviewCreateDTOType, DealershipReviewType} from "../types/DealershipReviewType.ts";
-import {dealershipReviewRepository} from "../repository/dealership.review.repository.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {DealershipReviewQueryType} from "../types/QueryType.ts";
+import {DealershipReviewCreateDTOType, DealershipReviewType} from "../types/DealershipReviewType.js";
+import {dealershipReviewRepository} from "../repository/dealership.review.repository.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {DealershipReviewQueryType} from "../types/QueryType.js";
 
 class DealershipReviewService{
     public async create(dto: DealershipReviewCreateDTOType, dealershipId: string, userId: string): Promise<DealershipReviewType>{

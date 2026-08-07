@@ -1,4 +1,4 @@
-import {BaseType} from "./BaseType.ts";
+import {BaseType} from "./BaseType.js";
 
 type DealershipReviewType = {
     _id: string

@@ -1,9 +1,9 @@
-import {DealershipMemberType} from "../types/DealershipMemberType.ts";
-import {userService} from "../services/user.service.ts";
-import {userPresenter} from "./user.presenter.ts";
-import {dealerShipService} from "../services/dealership.service.ts";
-import {dealershipPresenter} from "./dealership.presenter.ts";
-import {DealershipMemberQueryType} from "../types/QueryType.ts";
+import {DealershipMemberType} from "../types/DealershipMemberType.js";
+import {userService} from "../services/user.service.js";
+import {userPresenter} from "./user.presenter.js";
+import {dealerShipService} from "../services/dealership.service.js";
+import {dealershipPresenter} from "./dealership.presenter.js";
+import {DealershipMemberQueryType} from "../types/QueryType.js";
 
 class DealershipMemberPresenter{
     public async list(dealershipMember: DealershipMemberType[], total: number, query: DealershipMemberQueryType){

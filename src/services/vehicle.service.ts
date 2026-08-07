@@ -1,8 +1,8 @@
-import type {MakeType, ModelListType, ModelResponseType, VehicleType} from "../types/VehicleType.ts";
-import {vehicleRepository} from "../repository/vehicle.repository.ts";
-import {BaseQueryType} from "../types/QueryType.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
+import type {MakeType, ModelListType, ModelResponseType, VehicleType} from "../types/VehicleType.js";
+import {vehicleRepository} from "../repository/vehicle.repository.js";
+import {BaseQueryType} from "../types/QueryType.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
 
 class VehicleService{
     public async get(makeId: string): Promise<VehicleType>{

@@ -1,14 +1,14 @@
 import type {NextFunction, Request, Response} from "express";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {announcementPresenter} from "../presenters/announcement.presenter.ts";
-import {CreateAnnouncementDTOType, UpdateAnnouncementDTOType} from "../types/AnnouncementType.ts";
-import {announcementService} from "../services/announcement.service.ts";
-import {TokenPayloadType} from "../types/TokenType.ts";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {announcementPresenter} from "../presenters/announcement.presenter.js";
+import {CreateAnnouncementDTOType, UpdateAnnouncementDTOType} from "../types/AnnouncementType.js";
+import {announcementService} from "../services/announcement.service.js";
+import {TokenPayloadType} from "../types/TokenType.js";
 import {UploadedFile} from "express-fileupload";
-import {AnnouncementQueryType} from "../types/QueryType.ts";
-import {announcementStatisticsService} from "../services/announcement.statistics.service.ts";
-import {statisticsPresenter} from "../presenters/statistics.presenter.ts";
-import {AnnouncementStatusEnum} from "../enums/announcementEnums/announcement.status.enum.ts";
+import {AnnouncementQueryType} from "../types/QueryType.js";
+import {announcementStatisticsService} from "../services/announcement.statistics.service.js";
+import {statisticsPresenter} from "../presenters/statistics.presenter.js";
+import {AnnouncementStatusEnum} from "../enums/announcementEnums/announcement.status.enum.js";
 
 class AnnouncementController{
     public async getList(req: Request, res: Response, next: NextFunction){

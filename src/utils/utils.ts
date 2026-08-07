@@ -1,12 +1,12 @@
 import type {Request} from "express"
-import {RegExpression} from "../regExp/regExp.ts";
-import {CurrencyEnum} from "../enums/generalEnums/currency.enum.ts";
-import {whitelist} from "../constants/general.constants.ts";
-import {PrivatBank} from "../publicAPI/PrivatBank.ts";
+import {RegExpression} from "../regExp/regExp.js";
+import {CurrencyEnum} from "../enums/generalEnums/currency.enum.js";
+import {whitelist} from "../constants/general.constants.js";
+import {PrivatBank} from "../publicAPI/PrivatBank.js";
 import { Decimal } from "@prisma/client/runtime/library";
 import {AlternativesSchema, BooleanSchema, NumberSchema, StringSchema} from "joi";
-import {BASE_MESSAGES} from "../constants/joi.constants.ts";
-import {ExchangeRateResultType} from "../types/ExchangeRateResultType.ts";
+import {BASE_MESSAGES} from "../constants/joi.constants.js";
+import {ExchangeRateResultType} from "../types/ExchangeRateResultType.js";
 
 
 export class Utils{

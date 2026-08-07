@@ -1,10 +1,10 @@
 import type {NextFunction, Request, Response} from "express";
-import type {UserCreateDTOType} from "../types/UserType.ts";
-import {authService} from "../services/auth.service.ts";
-import {userPresenter} from "../presenters/user.presenter.ts";
-import type {SignInType} from "../types/AuthType.ts";
-import {TokenPayloadType} from "../types/TokenType.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
+import type {UserCreateDTOType} from "../types/UserType.js";
+import {authService} from "../services/auth.service.js";
+import {userPresenter} from "../presenters/user.presenter.js";
+import type {SignInType} from "../types/AuthType.js";
+import {TokenPayloadType} from "../types/TokenType.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
 
 class AuthController{
 

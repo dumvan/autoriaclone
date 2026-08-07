@@ -2,17 +2,15 @@
   "compilerOptions": {
     "module": "nodenext",
     "target": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "nodenext",
     "types": [],
-
+    "outDir": "./dist",
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
     "exactOptionalPropertyTypes": true,
 
     "strict": true,
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
     "esModuleInterop": true,
     "verbatimModuleSyntax": false,
     "isolatedModules": true,

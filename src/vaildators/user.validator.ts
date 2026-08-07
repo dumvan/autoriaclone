@@ -1,9 +1,9 @@
 import joi from "joi"
-import {UserRegexpEnum} from "../enums/userEnums/user.regexp.enum.ts";
-import {AccountTypeEnum, GenderEnum} from "../../prisma/src/generated/prisma/enums.ts";
-import {regionRepository} from "../repository/region.repository.ts";
-import {GlobalRoleEnums} from "../enums/globalRoleEnums/globalRoleEnums.ts";
-import { Utils } from "../utils/utils.ts";
+import {UserRegexpEnum} from "../enums/userEnums/user.regexp.enum.js";
+import {AccountTypeEnum, GenderEnum} from "../../prisma/src/generated/prisma/enums.js";
+import {regionRepository} from "../repository/region.repository.js";
+import {GlobalRoleEnums} from "../enums/globalRoleEnums/globalRoleEnums.js";
+import { Utils } from "../utils/utils.js";
 
 export class UserValidator{
     private static name = joi.string().regex(UserRegexpEnum.NAME).trim().messages({

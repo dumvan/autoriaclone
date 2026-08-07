@@ -1,12 +1,12 @@
 import {Request, Response, NextFunction} from "express";
-import {TokenPayloadType} from "../types/TokenType.ts";
-import {announcementService} from "../services/announcement.service.ts";
-import {AdminRoleEnums} from "../enums/adminEnums/admin.role.enums.ts";
-import {userService} from "../services/user.service.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {AnnouncementStatusEnum} from "../enums/announcementEnums/announcement.status.enum.ts";
-import {AnnouncementType} from "../types/AnnouncementType.ts";
+import {TokenPayloadType} from "../types/TokenType.js";
+import {announcementService} from "../services/announcement.service.js";
+import {AdminRoleEnums} from "../enums/adminEnums/admin.role.enums.js";
+import {userService} from "../services/user.service.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {AnnouncementStatusEnum} from "../enums/announcementEnums/announcement.status.enum.js";
+import {AnnouncementType} from "../types/AnnouncementType.js";
 
 class AnnouncementMiddleware{
     public async checkStrictAccess (req: Request, res: Response, next: NextFunction){

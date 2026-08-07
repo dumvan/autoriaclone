@@ -1,16 +1,16 @@
 import joi from "joi";
 import type {Request, Response, NextFunction} from "express";
-import {ApiError} from "../errors/api.error.ts";
+import {ApiError} from "../errors/api.error.js";
 import {isObjectIdOrHexString} from "mongoose";
 import {validate} from "uuid";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {Utils} from "../utils/utils.ts";
-import {TokenPayloadType} from "../types/TokenType.ts";
-import {userService} from "../services/user.service.ts";
-import {ReadableServiceType} from "../types/ReadableServiceType.ts";
-import {joiOptions} from "../constants/joi.constants.ts";
-import {dealershipMemberService} from "../services/dealership.member.service.ts";
-import {DealershipMemberPermissionsEnum} from "../constants/dealership.member.role.permissions.ts";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {Utils} from "../utils/utils.js";
+import {TokenPayloadType} from "../types/TokenType.js";
+import {userService} from "../services/user.service.js";
+import {ReadableServiceType} from "../types/ReadableServiceType.js";
+import {joiOptions} from "../constants/joi.constants.js";
+import {dealershipMemberService} from "../services/dealership.member.service.js";
+import {DealershipMemberPermissionsEnum} from "../constants/dealership.member.role.permissions.js";
 
 class CommonMiddleware{
     public validateBody(validator: joi.ObjectSchema){

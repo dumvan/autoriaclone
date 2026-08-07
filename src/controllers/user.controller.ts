@@ -1,20 +1,20 @@
 import type {Request, Response, NextFunction} from "express";
-import {userService} from "../services/user.service.ts";
-import type {UserCreateDTOType, UserUpdateDTOType} from "../types/UserType.ts";
-import {userPresenter} from "../presenters/user.presenter.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {AnnouncementQueryType, DealershipReviewQueryType, UserQueryType} from "../types/QueryType.ts";
+import {userService} from "../services/user.service.js";
+import type {UserCreateDTOType, UserUpdateDTOType} from "../types/UserType.js";
+import {userPresenter} from "../presenters/user.presenter.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {AnnouncementQueryType, DealershipReviewQueryType, UserQueryType} from "../types/QueryType.js";
 import {UploadedFile} from "express-fileupload";
-import {TokenPayloadType} from "../types/TokenType.ts";
-import {BanType} from "../types/BanType.ts";
-import {dealershipMemberService} from "../services/dealership.member.service.ts";
-import {dealershipMemberPresenter} from "../presenters/dealership.member.presenter.ts";
-import {announcementService} from "../services/announcement.service.ts";
-import {announcementPresenter} from "../presenters/announcement.presenter.ts";
-import {subscriptionPurchaseService} from "../services/subscription.purchase.service.ts";
-import {subscriptionPurchasePresenter} from "../presenters/subscription.purchase.presenter.ts";
-import {dealershipReviewPresenter} from "../presenters/dealership.review.presenter.ts";
-import {dealershipReviewService} from "../services/dealership.review.service.ts";
+import {TokenPayloadType} from "../types/TokenType.js";
+import {BanType} from "../types/BanType.js";
+import {dealershipMemberService} from "../services/dealership.member.service.js";
+import {dealershipMemberPresenter} from "../presenters/dealership.member.presenter.js";
+import {announcementService} from "../services/announcement.service.js";
+import {announcementPresenter} from "../presenters/announcement.presenter.js";
+import {subscriptionPurchaseService} from "../services/subscription.purchase.service.js";
+import {subscriptionPurchasePresenter} from "../presenters/subscription.purchase.presenter.js";
+import {dealershipReviewPresenter} from "../presenters/dealership.review.presenter.js";
+import {dealershipReviewService} from "../services/dealership.review.service.js";
 
 
 class UserController{

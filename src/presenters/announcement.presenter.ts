@@ -1,9 +1,9 @@
-import {AnnouncementType} from "../types/AnnouncementType.ts";
-import {AnnouncementQueryType} from "../types/QueryType.ts";
-import {userService} from "../services/user.service.ts";
-import {userPresenter} from "./user.presenter.ts";
-import {regionService} from "../services/region.service.ts";
-import {dealershipPresenter} from "./dealership.presenter.ts";
+import {AnnouncementType} from "../types/AnnouncementType.js";
+import {AnnouncementQueryType} from "../types/QueryType.js";
+import {userService} from "../services/user.service.js";
+import {userPresenter} from "./user.presenter.js";
+import {regionService} from "../services/region.service.js";
+import {dealershipPresenter} from "./dealership.presenter.js";
 
 class AnnouncementPresenter{
     public async list(

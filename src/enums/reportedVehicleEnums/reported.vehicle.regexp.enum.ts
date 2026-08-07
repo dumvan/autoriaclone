@@ -1,4 +1,4 @@
-import {RegexBuilder} from "../../regExp/regExp.ts";
+import {RegexBuilder} from "../../regExp/regExp.js";
 
 export const ReportedVehicleRegexpEnum = {
     MAKE_NAME: new RegexBuilder().withLatin().withCyrillic().withSpace().withNumbers().withSymbols("-").build(),

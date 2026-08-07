@@ -1,9 +1,9 @@
 import {Router} from "express";
-import {commonMiddleware} from "../../middlewares/common.middleware.ts";
-import {DealershipType} from "../../types/DealershipType.ts";
-import {dealerShipService} from "../../services/dealership.service.ts";
-import {dealershipController} from "../../controllers/dealership.controller.ts";
-import {DealershipPermissionsEnum} from "../../enums/permissionEnums/dealership.permission.enum.ts";
+import {commonMiddleware} from "../../middlewares/common.middleware.js";
+import {DealershipType} from "../../types/DealershipType.js";
+import {dealerShipService} from "../../services/dealership.service.js";
+import {dealershipController} from "../../controllers/dealership.controller.js";
+import {DealershipPermissionsEnum} from "../../enums/permissionEnums/dealership.permission.enum.js";
 
 const router = Router()
 

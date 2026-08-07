@@ -1,10 +1,10 @@
 import {Router} from "express";
-import {commonMiddleware} from "../../middlewares/common.middleware.ts";
-import {QueryValidator} from "../../vaildators/query.validator.ts";
-import {reportedVehicleController} from "../../controllers/reported.vehicle.controller.ts";
-import {ReportedVehiclesPermissionsEnum} from "../../enums/permissionEnums/reported.vehicles.permissions.enum.ts";
-import {ReportedVehicleType} from "../../types/ReportedVehicleType.ts";
-import {reportedVehicleService} from "../../services/reported.vehicle.service.ts";
+import {commonMiddleware} from "../../middlewares/common.middleware.js";
+import {QueryValidator} from "../../vaildators/query.validator.js";
+import {reportedVehicleController} from "../../controllers/reported.vehicle.controller.js";
+import {ReportedVehiclesPermissionsEnum} from "../../enums/permissionEnums/reported.vehicles.permissions.enum.js";
+import {ReportedVehicleType} from "../../types/ReportedVehicleType.js";
+import {reportedVehicleService} from "../../services/reported.vehicle.service.js";
 
 const router = Router()
 

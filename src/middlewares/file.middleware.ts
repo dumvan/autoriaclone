@@ -1,9 +1,9 @@
-import {FileConfigType} from "../types/FileConfigType.ts";
+import {FileConfigType} from "../types/FileConfigType.js";
 import {Request, Response, NextFunction} from "express";
 import {UploadedFile} from "express-fileupload";
-import {ApiError} from "../errors/api.error.ts";
-import {FileValidator} from "../vaildators/file.validator.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
+import {ApiError} from "../errors/api.error.js";
+import {FileValidator} from "../vaildators/file.validator.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
 
 class FileMiddleware{
     public validateFile(key: string, config: FileConfigType){

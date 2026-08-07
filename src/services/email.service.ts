@@ -1,8 +1,8 @@
 import nodemailer from "nodemailer"
-import {configs} from "../configs/configs.ts";
+import {configs} from "../configs/configs.js";
 import path from "node:path";
 import hbs from "nodemailer-express-handlebars";
-import {EmailEnum} from "../enums/generalEnums/email.enum.ts";
+import {EmailEnum} from "../enums/generalEnums/email.enum.js";
 import {emailConstants} from "../constants/email.constants.js";
 import {EmailPayloadType} from "../types/EmailPayloadType.js";
 

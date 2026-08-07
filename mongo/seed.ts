@@ -3,9 +3,9 @@ dotenv.config({ path: path.join(process.cwd(), '.env') });
 import fs from "fs/promises";
 import path from "path";
 import mongoose, { Types } from "mongoose";
-import {Vehicle} from "../src/models/mongoose/vehicle.model.ts";
+import {Vehicle} from "../src/models/mongoose/vehicle.model.js";
 import type {OldModelType, OldVehicleType, VehicleType} from "../src/types/VehicleType.ts";
-import {configs} from "../src/configs/configs.ts";
+import {configs} from "../src/configs/configs.js";
 
 const connectDB = async () => {
     try {

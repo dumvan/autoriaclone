@@ -1,7 +1,7 @@
-import {configs} from "../configs/configs.ts";
-import {ExchangeCurrencyType} from "../types/ExchangeCurrencyType.ts";
-import {CurrencyEnum} from "../enums/generalEnums/currency.enum.ts";
-import {ExchangeRateResultType} from "../types/ExchangeRateResultType.ts";
+import {configs} from "../configs/configs.js";
+import {ExchangeCurrencyType} from "../types/ExchangeCurrencyType.js";
+import {CurrencyEnum} from "../enums/generalEnums/currency.enum.js";
+import {ExchangeRateResultType} from "../types/ExchangeRateResultType.js";
 
 export class PrivatBank{
     public static async getExchangeRate(): Promise<ExchangeRateResultType>{

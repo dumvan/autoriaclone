@@ -1,7 +1,7 @@
-import {ReportedVehicleType} from "../types/ReportedVehicleType.ts";
-import {BaseQueryType} from "../types/QueryType.ts";
-import {userService} from "../services/user.service.ts";
-import {userPresenter} from "./user.presenter.ts";
+import {ReportedVehicleType} from "../types/ReportedVehicleType.js";
+import {BaseQueryType} from "../types/QueryType.js";
+import {userService} from "../services/user.service.js";
+import {userPresenter} from "./user.presenter.js";
 
 class ReportedVehiclePresenter{
     private async list(reportedVehicles: ReportedVehicleType[], total: number, query: BaseQueryType, res: (reportedVehicles: ReportedVehicleType) => unknown){

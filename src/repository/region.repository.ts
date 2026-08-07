@@ -1,6 +1,6 @@
-import {prisma} from "../../prisma/prisma.client.ts";
-import type {Region} from "../../prisma/src/generated/prisma/client.ts";
-import {BaseQueryType} from "../types/QueryType.ts";
+import {prisma} from "../../prisma/prisma.client.js";
+import type {Region} from "../../prisma/src/generated/prisma/client.js";
+import {BaseQueryType} from "../types/QueryType.js";
 
 class RegionRepository{
     public async getList(query: BaseQueryType): Promise<[Region[], number]>{

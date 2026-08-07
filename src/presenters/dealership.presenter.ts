@@ -1,7 +1,7 @@
-import {DealershipType} from "../types/DealershipType.ts";
-import {userService} from "../services/user.service.ts";
-import {userPresenter} from "./user.presenter.ts";
-import {DealershipQueryType} from "../types/QueryType.ts";
+import {DealershipType} from "../types/DealershipType.js";
+import {userService} from "../services/user.service.js";
+import {userPresenter} from "./user.presenter.js";
+import {DealershipQueryType} from "../types/QueryType.js";
 
 class DealershipPresenter{
     public async list(dealerships: DealershipType[],  total: number, query: DealershipQueryType){

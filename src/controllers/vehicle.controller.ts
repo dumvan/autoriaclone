@@ -1,7 +1,7 @@
 import type {NextFunction, Request, Response} from "express";
-import {vehicleService} from "../services/vehicle.service.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {BaseQueryType} from "../types/QueryType.ts";
+import {vehicleService} from "../services/vehicle.service.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {BaseQueryType} from "../types/QueryType.js";
 
 class VehicleController{
     public async getMakeList(req: Request, res: Response, next: NextFunction){

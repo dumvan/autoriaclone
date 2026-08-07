@@ -1,22 +1,22 @@
-import {userRepository} from "../repository/user.repository.ts";
-import type {UserCreateInput, UserUpdateInput} from "../../prisma/src/generated/prisma/models/User.ts";
-import type {UserCreateDTOType, UserUpdateDTOType} from "../types/UserType.ts";
-import {roleService} from "./role.service.ts";
-import {User} from "../../prisma/src/generated/prisma/client.ts";
-import {UserQueryType} from "../types/QueryType.ts";
+import {userRepository} from "../repository/user.repository.js";
+import type {UserCreateInput, UserUpdateInput} from "../../prisma/src/generated/prisma/models/User.js";
+import type {UserCreateDTOType, UserUpdateDTOType} from "../types/UserType.js";
+import {roleService} from "./role.service.js";
+import {User} from "../../prisma/src/generated/prisma/client.js";
+import {UserQueryType} from "../types/QueryType.js";
 import {RoleUpdateOneRequiredWithoutUserNestedInput} from "../../prisma/src/generated/prisma/models/Role.js";
 import {RegionUpdateOneRequiredWithoutUserNestedInput} from "../../prisma/src/generated/prisma/models/Region.js";
 import {UploadedFile} from "express-fileupload";
-import {s3Service} from "./s3.service.ts";
-import {FileItemTypeEnum} from "../enums/generalEnums/FileEnum.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {UserWithIncludedPermissionType, UserWithIncludedRegionAndRoleType} from "../types/UserWithIncludeDataType.ts";
-import {BanType} from "../types/BanType.ts";
-import {TimeHelper} from "../timeHelper/time.helper.ts";
-import {UserListReturnType} from "../types/ListReturnType.ts";
-import {tokenRepository} from "../repository/token.repository.ts";
-import {GlobalRoleEnums} from "../enums/globalRoleEnums/globalRoleEnums.ts";
+import {s3Service} from "./s3.service.js";
+import {FileItemTypeEnum} from "../enums/generalEnums/FileEnum.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {UserWithIncludedPermissionType, UserWithIncludedRegionAndRoleType} from "../types/UserWithIncludeDataType.js";
+import {BanType} from "../types/BanType.js";
+import {TimeHelper} from "../timeHelper/time.helper.js";
+import {UserListReturnType} from "../types/ListReturnType.js";
+import {tokenRepository} from "../repository/token.repository.js";
+import {GlobalRoleEnums} from "../enums/globalRoleEnums/globalRoleEnums.js";
 
 class UserService{
     public async getList(query: UserQueryType): Promise<UserListReturnType>{

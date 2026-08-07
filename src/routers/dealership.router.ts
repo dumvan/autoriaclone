@@ -1,23 +1,23 @@
 import {Router} from "express";
-import {commonMiddleware} from "../middlewares/common.middleware.ts";
-import {DealershipValidator} from "../vaildators/dealership.validator.ts";
-import {dealershipController} from "../controllers/dealership.controller.ts";
-import {DealershipType} from "../types/DealershipType.ts";
-import {dealerShipService} from "../services/dealership.service.ts";
-import {fileMiddleware} from "../middlewares/file.middleware.ts";
-import {dealershipLogoConfig} from "../constants/dealership.logo.constant.ts";
-import {strictAuthMiddleware} from "../middlewares/strict.auth.middleware.ts";
-import {DealershipReviewValidator} from "../vaildators/dealership.review.validator.ts";
-import {DealershipMemberValidator} from "../vaildators/dealership.member.validator.ts";
-import {DealershipMemberType} from "../types/DealershipMemberType.ts";
-import {dealershipMemberService} from "../services/dealership.member.service.ts";
-import {DealershipMemberPermissionsEnum} from "../constants/dealership.member.role.permissions.ts";
-import {dealershipMemberMiddleware} from "../middlewares/dealership.member.middleware.ts";
-import {QueryValidator} from "../vaildators/query.validator.ts";
-import { DealershipReviewType } from "../types/DealershipReviewType.ts";
-import {dealershipReviewService} from "../services/dealership.review.service.ts";
-import { dealershipReviewController } from "../controllers/dealership.review.controller.ts";
-import {userMiddleware} from "../middlewares/user.middleware.ts";
+import {commonMiddleware} from "../middlewares/common.middleware.js";
+import {DealershipValidator} from "../vaildators/dealership.validator.js";
+import {dealershipController} from "../controllers/dealership.controller.js";
+import {DealershipType} from "../types/DealershipType.js";
+import {dealerShipService} from "../services/dealership.service.js";
+import {fileMiddleware} from "../middlewares/file.middleware.js";
+import {dealershipLogoConfig} from "../constants/dealership.logo.constant.js";
+import {strictAuthMiddleware} from "../middlewares/strict.auth.middleware.js";
+import {DealershipReviewValidator} from "../vaildators/dealership.review.validator.js";
+import {DealershipMemberValidator} from "../vaildators/dealership.member.validator.js";
+import {DealershipMemberType} from "../types/DealershipMemberType.js";
+import {dealershipMemberService} from "../services/dealership.member.service.js";
+import {DealershipMemberPermissionsEnum} from "../constants/dealership.member.role.permissions.js";
+import {dealershipMemberMiddleware} from "../middlewares/dealership.member.middleware.js";
+import {QueryValidator} from "../vaildators/query.validator.js";
+import { DealershipReviewType } from "../types/DealershipReviewType.js";
+import {dealershipReviewService} from "../services/dealership.review.service.js";
+import { dealershipReviewController } from "../controllers/dealership.review.controller.js";
+import {userMiddleware} from "../middlewares/user.middleware.js";
 
 const router = Router()
 

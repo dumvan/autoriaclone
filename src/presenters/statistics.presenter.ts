@@ -1,4 +1,4 @@
-import {StatisticsType} from "../types/StatisticsType.ts";
+import {StatisticsType} from "../types/StatisticsType.js";
 
 class StatisticsPresenter{
     public res(statistics: StatisticsType){

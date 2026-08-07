@@ -1,10 +1,10 @@
-import {DealershipCreateWithOwnerIdDTOType, DealershipType, DealershipUpdateWithoutInputDTOType} from "../types/DealershipType.ts";
-import {Dealership} from "../models/mongoose/dealership.model.ts";
-import {DealershipQueryType} from "../types/QueryType.ts";
+import {DealershipCreateWithOwnerIdDTOType, DealershipType, DealershipUpdateWithoutInputDTOType} from "../types/DealershipType.js";
+import {Dealership} from "../models/mongoose/dealership.model.js";
+import {DealershipQueryType} from "../types/QueryType.js";
 import {FilterQuery} from "mongoose";
-import {OrderEnum} from "../enums/generalEnums/order.enum.ts";
-import {SortQuery} from "../types/SortQuery.ts";
-import {DealershipOrderByEnum} from "../enums/dealershipEnums/dealership.orderBy.enum.ts";
+import {OrderEnum} from "../enums/generalEnums/order.enum.js";
+import {SortQuery} from "../types/SortQuery.js";
+import {DealershipOrderByEnum} from "../enums/dealershipEnums/dealership.orderBy.enum.js";
 
 class DealershipRepository{
     public async getList(query: DealershipQueryType): Promise<[DealershipType[], number]>{

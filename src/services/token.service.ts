@@ -1,11 +1,11 @@
 import jwt from "jsonwebtoken"
-import {TokenPairType, TokenPayloadType} from "../types/TokenType.ts";
-import {configs} from "../configs/configs.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {TokenTypeEnum} from "../enums/authEnums/token.type.enum.ts";
-import type { Token } from "../../prisma/src/generated/prisma/client.ts";
-import {tokenRepository} from "../repository/token.repository.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
+import {TokenPairType, TokenPayloadType} from "../types/TokenType.js";
+import {configs} from "../configs/configs.js";
+import {ApiError} from "../errors/api.error.js";
+import {TokenTypeEnum} from "../enums/authEnums/token.type.enum.js";
+import type { Token } from "../../prisma/src/generated/prisma/client.js";
+import {tokenRepository} from "../repository/token.repository.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
 
 class TokenService{
     public generateTokenPair(payload: TokenPayloadType): TokenPairType{

@@ -1,19 +1,19 @@
-import {AnnouncementType, CreateAnnouncementDTOType, CreateAnnouncementInRepositoryDTOType, UpdateAnnouncementDTOType} from "../types/AnnouncementType.ts";
-import {announcementRepository} from "../repository/announcement.repository.ts";
-import {PrivatBank} from "../publicAPI/PrivatBank.ts";
+import {AnnouncementType, CreateAnnouncementDTOType, CreateAnnouncementInRepositoryDTOType, UpdateAnnouncementDTOType} from "../types/AnnouncementType.js";
+import {announcementRepository} from "../repository/announcement.repository.js";
+import {PrivatBank} from "../publicAPI/PrivatBank.js";
 import {UploadedFile} from "express-fileupload";
-import {s3Service} from "./s3.service.ts";
-import {FileItemTypeEnum} from "../enums/generalEnums/FileEnum.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {userService} from "./user.service.ts";
-import {AnnouncementQueryType} from "../types/QueryType.ts";
-import {Utils} from "../utils/utils.ts";
-import {AnnouncementStatusEnum} from "../enums/announcementEnums/announcement.status.enum.ts";
-import {AnnouncementListReturnType} from "../types/ListReturnType.ts";
-import {announcementStatisticsService} from "./announcement.statistics.service.ts";
-import {dealershipMemberRepository} from "../repository/dealership.member.repository.ts";
-import {AccountTypeEnum} from "../../prisma/src/generated/prisma/enums.ts";
+import {s3Service} from "./s3.service.js";
+import {FileItemTypeEnum} from "../enums/generalEnums/FileEnum.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {userService} from "./user.service.js";
+import {AnnouncementQueryType} from "../types/QueryType.js";
+import {Utils} from "../utils/utils.js";
+import {AnnouncementStatusEnum} from "../enums/announcementEnums/announcement.status.enum.js";
+import {AnnouncementListReturnType} from "../types/ListReturnType.js";
+import {announcementStatisticsService} from "./announcement.statistics.service.js";
+import {dealershipMemberRepository} from "../repository/dealership.member.repository.js";
+import {AccountTypeEnum} from "../../prisma/src/generated/prisma/enums.js";
 
 class AnnouncementService{
     public async getList(query: AnnouncementQueryType, filterInput?: Partial<AnnouncementType> & {dealership_id?: string}): Promise<AnnouncementListReturnType>{

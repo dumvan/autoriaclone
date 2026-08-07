@@ -1,6 +1,6 @@
-import {prisma} from "../../prisma/prisma.client.ts";
-import {SubscriptionPlan} from "../../prisma/src/generated/prisma/client.ts";
-import {SubscriptionPlanCreateInput, SubscriptionPlanUpdateInput} from "../../prisma/src/generated/prisma/models/SubscriptionPlan.ts";
+import {prisma} from "../../prisma/prisma.client.js";
+import {SubscriptionPlan} from "../../prisma/src/generated/prisma/client.js";
+import {SubscriptionPlanCreateInput, SubscriptionPlanUpdateInput} from "../../prisma/src/generated/prisma/models/SubscriptionPlan.js";
 
 class SubscriptionPlanRepository{
     public async getList(): Promise<SubscriptionPlan[]>{

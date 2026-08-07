@@ -1,10 +1,10 @@
-import {prisma} from "./prisma.client.ts";
-import {AnnouncementPermissionsEnum} from "../src/enums/permissionEnums/announcement.permissions.enum.ts";
-import {UserPermissionsEnum} from "../src/enums/permissionEnums/user.permissions.enum.ts";
-import {DealershipPermissionsEnum} from "../src/enums/permissionEnums/dealership.permission.enum.ts";
-import {BillingPermissionsEnum} from "../src/enums/permissionEnums/billing.permissions.enum.ts";
-import {SubscriptionCodeEnum} from "../src/enums/SubcriptionCodeEnums/subscription.code.enum.ts";
-import {ReportedVehiclesPermissionsEnum} from "../src/enums/permissionEnums/reported.vehicles.permissions.enum.ts";
+import {prisma} from "./prisma.client.js";
+import {AnnouncementPermissionsEnum} from "../src/enums/permissionEnums/announcement.permissions.enum.js";
+import {UserPermissionsEnum} from "../src/enums/permissionEnums/user.permissions.enum.js";
+import {DealershipPermissionsEnum} from "../src/enums/permissionEnums/dealership.permission.enum.js";
+import {BillingPermissionsEnum} from "../src/enums/permissionEnums/billing.permissions.enum.js";
+import {SubscriptionCodeEnum} from "../src/enums/SubcriptionCodeEnums/subscription.code.enum.js";
+import {ReportedVehiclesPermissionsEnum} from "../src/enums/permissionEnums/reported.vehicles.permissions.enum.js";
 
 export default async function main() {
 

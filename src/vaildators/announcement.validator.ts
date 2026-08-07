@@ -1,8 +1,8 @@
-import {CurrencyEnum} from "../enums/generalEnums/currency.enum.ts";
+import {CurrencyEnum} from "../enums/generalEnums/currency.enum.js";
 import joi from "joi"
-import {AnnouncementRegexpEnum} from "../enums/announcementEnums/announcement.regexp.enum.ts";
-import {VehicleValidator} from "./vehicle.validator.ts";
-import {regionRepository} from "../repository/region.repository.ts";
+import {AnnouncementRegexpEnum} from "../enums/announcementEnums/announcement.regexp.enum.js";
+import {VehicleValidator} from "./vehicle.validator.js";
+import {regionRepository} from "../repository/region.repository.js";
 
 export class AnnouncementValidator {
     private static title = joi.string().pattern(AnnouncementRegexpEnum.TITLE).messages({
@@ -18,7 +18,9 @@ export class AnnouncementValidator {
         }
         const region = await regionRepository.getById(value)
         if(!region){
-            return helpers.message("Регіон не знайдено")
+            return helpers.message({
+                'any.existent': "Регіон не знайдено"
+            })
         }
     })
     private static price = joi.number().min(0)

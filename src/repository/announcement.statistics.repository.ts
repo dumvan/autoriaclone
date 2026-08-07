@@ -1,5 +1,5 @@
-import {prisma} from "../../prisma/prisma.client.ts";
-import {AnnouncementStatistics} from "../../prisma/src/generated/prisma/client.ts";
+import {prisma} from "../../prisma/prisma.client.js";
+import {AnnouncementStatistics} from "../../prisma/src/generated/prisma/client.js";
 
 class AnnouncementStatisticsRepository{
     public async getByAnnouncementId(id: string): Promise<AnnouncementStatistics | null>{

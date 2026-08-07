@@ -1,13 +1,13 @@
 import express from "express"
-import {apiRouter} from "./routers/api.router.ts";
-import {configs} from "./configs/configs.ts";
-import {errorController} from "./controllers/error.controller.ts";
+import {apiRouter} from "./routers/api.router.js";
+import {configs} from "./configs/configs.js";
+import {errorController} from "./controllers/error.controller.js";
 import fileUpload from "express-fileupload";
 import swaggerUi from "swagger-ui-express"
-import swaggerJson from "../docs/swagger.json"
+import swaggerJson from "../docs/swagger.json" with {type: 'json'}
 import mongoose from "mongoose";
-import {cronRunner} from "./crons";
-import {swaggerOptions} from "../docs/swagger.options.ts";
+import {cronRunner} from "./crons/index.js";
+import {swaggerOptions} from "../docs/swagger.options.js";
 import path from "node:path";
 
 const app = express()

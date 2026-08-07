@@ -1,10 +1,10 @@
-import {Announcement} from "../models/mongoose/announcement.model.ts";
-import {AnnouncementType, CreateAnnouncementInRepositoryDTOType, UpdateAnnouncementDTOType} from "../types/AnnouncementType.ts";
+import {Announcement} from "../models/mongoose/announcement.model.js";
+import {AnnouncementType, CreateAnnouncementInRepositoryDTOType, UpdateAnnouncementDTOType} from "../types/AnnouncementType.js";
 import {FilterQuery, PipelineStage, UpdateQuery} from "mongoose";
-import {AnnouncementQueryType} from "../types/QueryType.ts";
-import {AnnouncementOrderByEnum} from "../enums/announcementEnums/announcement.order.by.enum.ts";
-import {OrderEnum} from "../enums/generalEnums/order.enum.ts";
-import {AnnouncementListReturnType} from "../types/ListReturnType.ts";
+import {AnnouncementQueryType} from "../types/QueryType.js";
+import {AnnouncementOrderByEnum} from "../enums/announcementEnums/announcement.order.by.enum.js";
+import {OrderEnum} from "../enums/generalEnums/order.enum.js";
+import {AnnouncementListReturnType} from "../types/ListReturnType.js";
 
 class AnnouncementRepository{
     public async getList(query: AnnouncementQueryType, filterInput?: Partial<AnnouncementType> & {dealership_id?: string}): Promise<AnnouncementListReturnType>{

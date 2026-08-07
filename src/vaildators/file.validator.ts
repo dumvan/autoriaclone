@@ -1,7 +1,7 @@
 import {UploadedFile} from "express-fileupload";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {Utils} from "../utils/utils.ts";
-import {FileConfigType} from "../types/FileConfigType.ts";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {Utils} from "../utils/utils.js";
+import {FileConfigType} from "../types/FileConfigType.js";
 
 export class FileValidator{
     public static validateFile(file: UploadedFile, config: FileConfigType): {message: string, status: number} | null{

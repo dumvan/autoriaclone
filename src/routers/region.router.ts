@@ -1,7 +1,7 @@
 import {Router} from "express";
-import {regionController} from "../controllers/region.controller.ts";
-import {commonMiddleware} from "../middlewares/common.middleware.ts";
-import {QueryValidator} from "../vaildators/query.validator.ts";
+import {regionController} from "../controllers/region.controller.js";
+import {commonMiddleware} from "../middlewares/common.middleware.js";
+import {QueryValidator} from "../vaildators/query.validator.js";
 
 const router = Router()
 

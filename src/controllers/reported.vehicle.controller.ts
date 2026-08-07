@@ -1,10 +1,10 @@
 import type {Request, Response, NextFunction} from "express";
-import {CreateReportedVehicleDTOType} from "../types/ReportedVehicleType.ts";
-import {reportedVehicleService} from "../services/reported.vehicle.service.ts";
-import {BaseQueryType} from "../types/QueryType.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {reportedVehiclePresenter} from "../presenters/reported.vehicle.controller.ts";
-import {TokenPayloadType} from "../types/TokenType.ts";
+import {CreateReportedVehicleDTOType} from "../types/ReportedVehicleType.js";
+import {reportedVehicleService} from "../services/reported.vehicle.service.js";
+import {BaseQueryType} from "../types/QueryType.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {reportedVehiclePresenter} from "../presenters/reported.vehicle.controller.js";
+import {TokenPayloadType} from "../types/TokenType.js";
 
 class ReportedVehicleController{
     public async create (req: Request, res: Response, next: NextFunction){

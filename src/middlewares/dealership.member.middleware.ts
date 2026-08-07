@@ -1,11 +1,11 @@
 import type {Request, Response, NextFunction} from "express"
-import {dealershipMemberService} from "../services/dealership.member.service.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {TokenPayloadType} from "../types/TokenType.ts";
-import {dealershipReviewService} from "../services/dealership.review.service.ts";
-import {AdminRoleEnums} from "../enums/adminEnums/admin.role.enums.ts";
-import {userService} from "../services/user.service.ts";
+import {dealershipMemberService} from "../services/dealership.member.service.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {TokenPayloadType} from "../types/TokenType.js";
+import {dealershipReviewService} from "../services/dealership.review.service.js";
+import {AdminRoleEnums} from "../enums/adminEnums/admin.role.enums.js";
+import {userService} from "../services/user.service.js";
 
 class DealershipMemberMiddleware{
     public async checkMember (req: Request, res: Response, next: NextFunction){

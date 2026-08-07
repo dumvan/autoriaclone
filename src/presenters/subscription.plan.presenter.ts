@@ -1,4 +1,4 @@
-import {SubscriptionPlan} from "../../prisma/src/generated/prisma/client.ts";
+import {SubscriptionPlan} from "../../prisma/src/generated/prisma/client.js";
 
 class SubscriptionPlanPresenter{
     public res(subscriptionPlan: SubscriptionPlan){

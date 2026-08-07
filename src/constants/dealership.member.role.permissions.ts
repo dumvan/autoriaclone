@@ -1,4 +1,4 @@
-import {DealershipRoleEnum} from "../enums/vehicleEnums/dealership.enum.ts";
+import {DealershipRoleEnum} from "../enums/vehicleEnums/dealership.enum.js";
 
 export enum DealershipMemberPermissionsEnum {
     UPDATE_INFO = 'UPDATE_INFO',

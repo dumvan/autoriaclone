@@ -1,5 +1,5 @@
-import {DealershipRoleEnum} from "../enums/vehicleEnums/dealership.enum.ts";
-import {BaseType} from "./BaseType.ts";
+import {DealershipRoleEnum} from "../enums/vehicleEnums/dealership.enum.js";
+import {BaseType} from "./BaseType.js";
 
 type DealershipMemberType = {
     _id: string

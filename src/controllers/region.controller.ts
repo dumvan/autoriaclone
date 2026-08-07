@@ -1,7 +1,7 @@
 import {Request, Response, NextFunction} from "express";
-import {regionService} from "../services/region.service.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {BaseQueryType} from "../types/QueryType.ts";
+import {regionService} from "../services/region.service.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {BaseQueryType} from "../types/QueryType.js";
 
 class RegionController{
     public async getList (req: Request, res: Response, next: NextFunction){

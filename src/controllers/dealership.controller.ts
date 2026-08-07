@@ -1,17 +1,17 @@
 import type {Request, Response, NextFunction} from "express";
-import {DealershipCreateWithInputDTOType} from "../types/DealershipType.ts";
-import {dealerShipService} from "../services/dealership.service.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {dealershipPresenter} from "../presenters/dealership.presenter.ts";
-import {TokenPayloadType} from "../types/TokenType.ts";
+import {DealershipCreateWithInputDTOType} from "../types/DealershipType.js";
+import {dealerShipService} from "../services/dealership.service.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {dealershipPresenter} from "../presenters/dealership.presenter.js";
+import {TokenPayloadType} from "../types/TokenType.js";
 import {UploadedFile} from "express-fileupload";
-import {dealershipMemberService} from "../services/dealership.member.service.ts";
-import {dealershipMemberPresenter} from "../presenters/dealership.member.presenter.ts";
-import {DealershipMemberAddDTOType, DealershipMemberUpdateDTOType} from "../types/DealershipMemberType.ts";
-import {announcementService} from "../services/announcement.service.ts";
-import {announcementPresenter} from "../presenters/announcement.presenter.ts";
-import {AnnouncementQueryType, DealershipMemberQueryType, DealershipQueryType} from "../types/QueryType.ts";
-import {AnnouncementStatusEnum} from "../enums/announcementEnums/announcement.status.enum.ts";
+import {dealershipMemberService} from "../services/dealership.member.service.js";
+import {dealershipMemberPresenter} from "../presenters/dealership.member.presenter.js";
+import {DealershipMemberAddDTOType, DealershipMemberUpdateDTOType} from "../types/DealershipMemberType.js";
+import {announcementService} from "../services/announcement.service.js";
+import {announcementPresenter} from "../presenters/announcement.presenter.js";
+import {AnnouncementQueryType, DealershipMemberQueryType, DealershipQueryType} from "../types/QueryType.js";
+import {AnnouncementStatusEnum} from "../enums/announcementEnums/announcement.status.enum.js";
 
 class DealershipController{
     public async create (req: Request, res: Response, next: NextFunction): Promise<void>{

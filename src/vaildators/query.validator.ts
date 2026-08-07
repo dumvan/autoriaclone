@@ -1,19 +1,19 @@
 import joi from "joi";
-import {UserSearchByEnum} from "../enums/userEnums/user.search.by.enum.ts";
-import {OrderEnum} from "../enums/generalEnums/order.enum.ts";
-import {UserOrderByEnum} from "../enums/userEnums/user.order.by.enum.ts";
-import {AnnouncementSearchByEnum} from "../enums/announcementEnums/announcement.search.by.enum.ts";
-import {AnnouncementOrderByEnum} from "../enums/announcementEnums/announcement.order.by.enum.ts";
+import {UserSearchByEnum} from "../enums/userEnums/user.search.by.enum.js";
+import {OrderEnum} from "../enums/generalEnums/order.enum.js";
+import {UserOrderByEnum} from "../enums/userEnums/user.order.by.enum.js";
+import {AnnouncementSearchByEnum} from "../enums/announcementEnums/announcement.search.by.enum.js";
+import {AnnouncementOrderByEnum} from "../enums/announcementEnums/announcement.order.by.enum.js";
 import Joi from "joi";
-import {AnnouncementRangeByEnum} from "../enums/announcementEnums/announcement.range.by.enum.ts";
-import {UserRangeByEnum} from "../enums/userEnums/user.range.by.enum.ts";
-import {DealershipSearchByEnum} from "../enums/dealershipEnums/dealership.searchBy.enum.ts";
-import {DealershipOrderByEnum} from "../enums/dealershipEnums/dealership.orderBy.enum.ts";
-import {DealershipReviewOrderByEnum} from "../enums/dealershipReviewsEnums/dealership.review.orderBy.enum.ts";
-import {UserValidator} from "./user.validator.ts";
-import {Utils} from "../utils/utils.ts";
-import {DealershipReviewSearchByEnum} from "../enums/dealershipReviewsEnums/dealership.review.searchBy.enum.ts";
-import {DealershipReviewValidator} from "./dealership.review.validator.ts";
+import {AnnouncementRangeByEnum} from "../enums/announcementEnums/announcement.range.by.enum.js";
+import {UserRangeByEnum} from "../enums/userEnums/user.range.by.enum.js";
+import {DealershipSearchByEnum} from "../enums/dealershipEnums/dealership.searchBy.enum.js";
+import {DealershipOrderByEnum} from "../enums/dealershipEnums/dealership.orderBy.enum.js";
+import {DealershipReviewOrderByEnum} from "../enums/dealershipReviewsEnums/dealership.review.orderBy.enum.js";
+import {UserValidator} from "./user.validator.js";
+import {Utils} from "../utils/utils.js";
+import {DealershipReviewSearchByEnum} from "../enums/dealershipReviewsEnums/dealership.review.searchBy.enum.js";
+import {DealershipReviewValidator} from "./dealership.review.validator.js";
 
 export class QueryValidator{
     private static page = joi.number().min(1).max(500).default(1)

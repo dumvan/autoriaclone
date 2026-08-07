@@ -1,13 +1,13 @@
-import {DealershipCreateWithInputDTOType, DealershipType, DealershipUpdateWithInputDTOType, DealershipUpdateWithoutInputDTOType} from "../types/DealershipType.ts";
-import {dealershipRepository} from "../repository/dealership.repository.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
+import {DealershipCreateWithInputDTOType, DealershipType, DealershipUpdateWithInputDTOType, DealershipUpdateWithoutInputDTOType} from "../types/DealershipType.js";
+import {dealershipRepository} from "../repository/dealership.repository.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
 import {UploadedFile} from "express-fileupload";
-import {s3Service} from "./s3.service.ts";
-import {FileItemTypeEnum} from "../enums/generalEnums/FileEnum.ts";
-import {dealershipMemberRepository} from "../repository/dealership.member.repository.ts";
-import {DealershipRoleEnum} from "../enums/vehicleEnums/dealership.enum.ts";
-import {DealershipQueryType} from "../types/QueryType.ts";
+import {s3Service} from "./s3.service.js";
+import {FileItemTypeEnum} from "../enums/generalEnums/FileEnum.js";
+import {dealershipMemberRepository} from "../repository/dealership.member.repository.js";
+import {DealershipRoleEnum} from "../enums/vehicleEnums/dealership.enum.js";
+import {DealershipQueryType} from "../types/QueryType.js";
 
 class DealershipService{
     public async create(dto: DealershipCreateWithInputDTOType, user_id: string): Promise<DealershipType>{

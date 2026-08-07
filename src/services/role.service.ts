@@ -1,7 +1,7 @@
-import {roleRepository} from "../repository/role.repository.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {Role} from "../../prisma/src/generated/prisma/client.ts";
+import {roleRepository} from "../repository/role.repository.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {Role} from "../../prisma/src/generated/prisma/client.js";
 
 class RoleService{
     public async getIdByName(name: string): Promise<number>{

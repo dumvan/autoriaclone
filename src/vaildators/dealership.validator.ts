@@ -1,6 +1,6 @@
 import joi from "joi";
-import {DealershipRegexpEnum} from "../enums/dealershipEnums/dealership.regexp.enum.ts";
-import {dealerShipService} from "../services/dealership.service.ts";
+import {DealershipRegexpEnum} from "../enums/dealershipEnums/dealership.regexp.enum.js";
+import {dealerShipService} from "../services/dealership.service.js";
 
 export class DealershipValidator{
     private static name = joi.string().trim().pattern(DealershipRegexpEnum.NAME)

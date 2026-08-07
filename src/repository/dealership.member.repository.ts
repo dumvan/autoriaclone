@@ -1,7 +1,7 @@
-import {DealershipMemberCreateWithUniqueFieldsDTOType, DealershipMemberType, DealershipMemberUpdateDTOType} from "../types/DealershipMemberType.ts";
-import {DealershipMember} from "../models/mongoose/dealershipMember.model.ts";
+import {DealershipMemberCreateWithUniqueFieldsDTOType, DealershipMemberType, DealershipMemberUpdateDTOType} from "../types/DealershipMemberType.js";
+import {DealershipMember} from "../models/mongoose/dealershipMember.model.js";
 import {FilterQuery, PipelineStage} from "mongoose";
-import {DealershipMemberQueryType} from "../types/QueryType.ts";
+import {DealershipMemberQueryType} from "../types/QueryType.js";
 
 class DealershipMemberRepository{
     public async get(memberId: string): Promise<DealershipMemberType | null>{

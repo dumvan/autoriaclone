@@ -1,10 +1,10 @@
 import {Router} from "express";
-import {commonMiddleware} from "../../middlewares/common.middleware.ts";
-import {BillingPermissionsEnum} from "../../enums/permissionEnums/billing.permissions.enum.ts";
-import {SubscriptionPlanValidator} from "../../vaildators/subscription.plan.validator.ts";
-import {subscriptionPlanController} from "../../controllers/subscription.plan.controller.ts";
-import {SubscriptionPlan} from "../../../prisma/src/generated/prisma/client.ts";
-import {subscriptionPlanService} from "../../services/subscription.plan.service.ts";
+import {commonMiddleware} from "../../middlewares/common.middleware.js";
+import {BillingPermissionsEnum} from "../../enums/permissionEnums/billing.permissions.enum.js";
+import {SubscriptionPlanValidator} from "../../vaildators/subscription.plan.validator.js";
+import {subscriptionPlanController} from "../../controllers/subscription.plan.controller.js";
+import {SubscriptionPlan} from "../../../prisma/src/generated/prisma/client.js";
+import {subscriptionPlanService} from "../../services/subscription.plan.service.js";
 
 const router = Router()
 

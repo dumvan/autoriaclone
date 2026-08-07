@@ -1,11 +1,11 @@
 import type {NextFunction, Request, Response} from "express";
-import {TokenPayloadType} from "../types/TokenType.ts";
-import {DealershipReviewCreateDTOType} from "../types/DealershipReviewType.ts";
-import {dealershipReviewService} from "../services/dealership.review.service.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {dealershipReviewPresenter} from "../presenters/dealership.review.presenter.ts";
-import {DealershipType} from "../types/DealershipType.ts";
-import {DealershipReviewQueryType} from "../types/QueryType.ts";
+import {TokenPayloadType} from "../types/TokenType.js";
+import {DealershipReviewCreateDTOType} from "../types/DealershipReviewType.js";
+import {dealershipReviewService} from "../services/dealership.review.service.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {dealershipReviewPresenter} from "../presenters/dealership.review.presenter.js";
+import {DealershipType} from "../types/DealershipType.js";
+import {DealershipReviewQueryType} from "../types/QueryType.js";
 
 class DealershipReviewController{
     public async create (req: Request, res: Response, next: NextFunction): Promise<void>{

@@ -1,7 +1,7 @@
 import mongoose, {model} from "mongoose";
-import {Dealership} from "./dealership.model.ts";
-import {DealershipRoleEnum} from "../../enums/vehicleEnums/dealership.enum.ts";
-import {DealershipMemberType} from "../../types/DealershipMemberType.ts";
+import {Dealership} from "./dealership.model.js";
+import {DealershipRoleEnum} from "../../enums/vehicleEnums/dealership.enum.js";
+import {DealershipMemberType} from "../../types/DealershipMemberType.js";
 
 const DealershipMemberSchema = new mongoose.Schema({
         dealership_id: {type: mongoose.Types.ObjectId, required: true, ref: 'Dealership'},

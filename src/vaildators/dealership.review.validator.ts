@@ -1,6 +1,6 @@
 import joi from "joi";
 import {isObjectIdOrHexString} from "mongoose";
-import {dealerShipService} from "../services/dealership.service.ts";
+import {dealerShipService} from "../services/dealership.service.js";
 
 export class DealershipReviewValidator{
     private static rating = joi.number().integer().min(0).max(10)
@@ -19,11 +19,15 @@ export class DealershipReviewValidator{
     private static dealershipReviewSearchRules = {
         dealership_id: joi.string().trim().external(async (value, helpers) => {
             if(!isObjectIdOrHexString(value)){
-                return helpers.message("Значення dealershipId є некоректним")
+                return helpers.message({
+                    'any.incorrect.id': "Значення dealershipId є некоректним"
+                })
             }
             const dealership = await dealerShipService.get(value)
             if(!dealership){
-                return helpers.message("Автосалон не знайдено")
+                return helpers.message({
+                    'any.existent': "Автосалон не знайдено"
+                })
             }
         })
     }

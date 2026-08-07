@@ -1,13 +1,13 @@
-import {subscriptionPurchaseRepository, SubscriptionPurchaseWithPlanAndUserType} from "../repository/subscription.purchase.repository.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {subscriptionPlanService} from "./subscription.plan.service.ts";
-import {userService} from "./user.service.ts";
-import {Utils} from "../utils/utils.ts";
-import {CurrencyEnum} from "../enums/generalEnums/currency.enum.ts";
-import {TimeHelper} from "../timeHelper/time.helper.ts";
-import {AccountTypeEnum} from "../../prisma/src/generated/prisma/enums.ts";
-import {SubscriptionPurchaseWhereInput} from "../../prisma/src/generated/prisma/models/SubscriptionPurchase.ts";
+import {subscriptionPurchaseRepository, SubscriptionPurchaseWithPlanAndUserType} from "../repository/subscription.purchase.repository.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {subscriptionPlanService} from "./subscription.plan.service.js";
+import {userService} from "./user.service.js";
+import {Utils} from "../utils/utils.js";
+import {CurrencyEnum} from "../enums/generalEnums/currency.enum.js";
+import {TimeHelper} from "../timeHelper/time.helper.js";
+import {AccountTypeEnum} from "../../prisma/src/generated/prisma/enums.js";
+import {SubscriptionPurchaseWhereInput} from "../../prisma/src/generated/prisma/models/SubscriptionPurchase.js";
 
 class SubscriptionPurchaseService{
     public async purchase(planId: string, userId: string){

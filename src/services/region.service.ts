@@ -1,8 +1,8 @@
-import {regionRepository} from "../repository/region.repository.ts";
-import {Region} from "../../prisma/src/generated/prisma/client.ts";
-import {BaseQueryType} from "../types/QueryType.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {ApiError} from "../errors/api.error.ts";
+import {regionRepository} from "../repository/region.repository.js";
+import {Region} from "../../prisma/src/generated/prisma/client.js";
+import {BaseQueryType} from "../types/QueryType.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {ApiError} from "../errors/api.error.js";
 
 class RegionService{
     public async getList(query: BaseQueryType): Promise<[Region[], number]>{

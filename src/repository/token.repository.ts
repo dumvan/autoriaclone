@@ -1,6 +1,6 @@
-import {TokenCreateInput, TokenWhereInput, TokenWhereUniqueInput} from "../../prisma/src/generated/prisma/models/Token.ts";
-import {prisma} from "../../prisma/prisma.client.ts";
-import type { Token } from "../../prisma/src/generated/prisma/client.ts";
+import {TokenCreateInput, TokenWhereInput, TokenWhereUniqueInput} from "../../prisma/src/generated/prisma/models/Token.js";
+import {prisma} from "../../prisma/prisma.client.js";
+import type { Token } from "../../prisma/src/generated/prisma/client.js";
 
 class TokenRepository{
     public async getByParams(params: TokenWhereInput): Promise<Token | null>{

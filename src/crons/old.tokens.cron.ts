@@ -1,6 +1,6 @@
-import {TimeHelper} from "../timeHelper/time.helper.ts";
-import {configs} from "../configs/configs.ts";
-import {tokenRepository} from "../repository/token.repository.ts";
+import {TimeHelper} from "../timeHelper/time.helper.js";
+import {configs} from "../configs/configs.js";
+import {tokenRepository} from "../repository/token.repository.js";
 import {CronJob} from "cron";
 
 const removeOldTokensHandler = async() => {

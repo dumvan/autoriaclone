@@ -1,8 +1,8 @@
 import {Request, Response, NextFunction} from "express";
-import {tokenService} from "../services/token.service.ts";
-import {TokenPayloadType} from "../types/TokenType.ts";
-import {TokenTypeEnum} from "../enums/authEnums/token.type.enum.ts";
-import {userService} from "../services/user.service.ts";
+import {tokenService} from "../services/token.service.js";
+import {TokenPayloadType} from "../types/TokenType.js";
+import {TokenTypeEnum} from "../enums/authEnums/token.type.enum.js";
+import {userService} from "../services/user.service.js";
 
 class OptionalAuthMiddleware {
     public async validateAccessToken (req: Request, res: Response, next: NextFunction){

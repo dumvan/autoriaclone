@@ -1,5 +1,5 @@
-import {prisma} from "../../prisma/prisma.client.ts";
-import type {Role} from "../../prisma/src/generated/prisma/client.ts";
+import {prisma} from "../../prisma/prisma.client.js";
+import type {Role} from "../../prisma/src/generated/prisma/client.js";
 
 class RoleRepository{
     public async getList(): Promise<Role[]>{

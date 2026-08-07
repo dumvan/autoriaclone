@@ -1,6 +1,6 @@
-import type {User} from "../../prisma/src/generated/prisma/client.ts";
-import {TokenPairType} from "./TokenType.ts";
-import {UserWithIncludedRegionAndRoleType} from "./UserWithIncludeDataType.ts";
+import type {User} from "../../prisma/src/generated/prisma/client.js";
+import {TokenPairType} from "./TokenType.js";
+import {UserWithIncludedRegionAndRoleType} from "./UserWithIncludeDataType.js";
 
 type SignResultType = {user: UserWithIncludedRegionAndRoleType, tokenPair: TokenPairType}
 type SignInType = Pick<User, "email" | "password">

@@ -1,10 +1,10 @@
-import {TransmissionTypeEnum} from "../enums/vehicleEnums/transmission.type.enum.ts";
-import {FuelTypeEnum} from "../enums/vehicleEnums/fuel.type.enum.ts";
-import {EnvironmentalStandardEnum} from "../enums/vehicleEnums/environmental.standard.enum.ts";
-import {DriveTypeEnum} from "../enums/vehicleEnums/drive.type.enum.ts";
-import {PaintConditionEnum} from "../enums/vehicleEnums/paint.condition.enum.ts";
-import {TechnicalConditionEnum} from "../enums/vehicleEnums/technical.condition.enum.ts";
-import {VehicleTypeEnum} from "../enums/vehicleEnums/vehicle.type.enum.ts";
+import {TransmissionTypeEnum} from "../enums/vehicleEnums/transmission.type.enum.js";
+import {FuelTypeEnum} from "../enums/vehicleEnums/fuel.type.enum.js";
+import {EnvironmentalStandardEnum} from "../enums/vehicleEnums/environmental.standard.enum.js";
+import {DriveTypeEnum} from "../enums/vehicleEnums/drive.type.enum.js";
+import {PaintConditionEnum} from "../enums/vehicleEnums/paint.condition.enum.js";
+import {TechnicalConditionEnum} from "../enums/vehicleEnums/technical.condition.enum.js";
+import {VehicleTypeEnum} from "../enums/vehicleEnums/vehicle.type.enum.js";
 
 export type FuelConsumptionDto = {
     city?: number;

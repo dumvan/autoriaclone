@@ -1,9 +1,9 @@
 import {Request, Response, NextFunction} from "express";
-import {TokenPayloadType} from "../types/TokenType.ts";
-import {userService} from "../services/user.service.ts";
-import {AdminRoleEnums} from "../enums/adminEnums/admin.role.enums.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
+import {TokenPayloadType} from "../types/TokenType.js";
+import {userService} from "../services/user.service.js";
+import {AdminRoleEnums} from "../enums/adminEnums/admin.role.enums.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
 
 class AdminMiddleware{
     public async checkAccess(req: Request, res: Response, next: NextFunction){

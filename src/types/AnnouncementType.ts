@@ -1,8 +1,8 @@
-import {CurrencyEnum} from "../enums/generalEnums/currency.enum.ts";
-import {BaseType} from "./BaseType.ts";
-import {ExchangeCurrencyMap} from "./ExchangeCurrencyType.ts";
-import {DealershipType} from "./DealershipType.ts";
-import {AnnouncementVehicleType} from "./AnnouncementVehicleType.ts";
+import {CurrencyEnum} from "../enums/generalEnums/currency.enum.js";
+import {BaseType} from "./BaseType.js";
+import {ExchangeCurrencyMap} from "./ExchangeCurrencyType.js";
+import {DealershipType} from "./DealershipType.js";
+import {AnnouncementVehicleType} from "./AnnouncementVehicleType.js";
 
 type AnnouncementType = {
     _id: string

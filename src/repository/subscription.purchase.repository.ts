@@ -1,9 +1,9 @@
-import {prisma} from "../../prisma/prisma.client.ts";
+import {prisma} from "../../prisma/prisma.client.js";
 import {
     SubscriptionPurchaseCreateInput,
     SubscriptionPurchaseGetPayload, SubscriptionPurchaseUpdateInput,
     SubscriptionPurchaseWhereInput
-} from "../../prisma/src/generated/prisma/models/SubscriptionPurchase.ts";
+} from "../../prisma/src/generated/prisma/models/SubscriptionPurchase.js";
 
 export type SubscriptionPurchaseWithPlanAndUserType = SubscriptionPurchaseGetPayload<{ include: {SubscriptionPlan: true, User: { include: {Role: true, Region: true} }}}>
 

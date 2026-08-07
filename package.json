@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start:dev": "nodemon --exec tsx src/index.ts",
-    "mogno:seed": "tsx mongo/seed.ts"
+    "start:dev": "nodemon --exec tsx src/index.js",
+    "mongo:seed": "tsx mongo/seed.ts",
+    "prisma:seed": "tsx prisma/seed.ts",
+    "migrate:create": "prisma migrate dev --create-only",
+    "migrate:run": "prisma migrate dev",
+    "build": "tsc",
+    "start": "node dist/src/index.js"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

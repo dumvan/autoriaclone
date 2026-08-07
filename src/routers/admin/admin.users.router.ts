@@ -1,13 +1,13 @@
 import {Router} from "express";
-import {commonMiddleware} from "../../middlewares/common.middleware.ts";
-import {User} from "../../../prisma/src/generated/prisma/client.ts";
-import {userService} from "../../services/user.service.ts";
-import {userController} from "../../controllers/user.controller.ts";
-import {UserValidator} from "../../vaildators/user.validator.ts";
-import {BanValidator} from "../../vaildators/ban.validator.ts";
-import {QueryValidator} from "../../vaildators/query.validator.ts";
-import {userMiddleware} from "../../middlewares/user.middleware.ts";
-import {UserPermissionsEnum} from "../../enums/permissionEnums/user.permissions.enum.ts";
+import {commonMiddleware} from "../../middlewares/common.middleware.js";
+import {User} from "../../../prisma/src/generated/prisma/client.js";
+import {userService} from "../../services/user.service.js";
+import {userController} from "../../controllers/user.controller.js";
+import {UserValidator} from "../../vaildators/user.validator.js";
+import {BanValidator} from "../../vaildators/ban.validator.js";
+import {QueryValidator} from "../../vaildators/query.validator.js";
+import {userMiddleware} from "../../middlewares/user.middleware.js";
+import {UserPermissionsEnum} from "../../enums/permissionEnums/user.permissions.enum.js";
 
 const router = Router()
 

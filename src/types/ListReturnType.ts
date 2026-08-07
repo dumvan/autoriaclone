@@ -1,6 +1,6 @@
-import {AnnouncementType} from "./AnnouncementType.ts";
-import {VehicleType} from "./VehicleType.ts";
-import {UserWithIncludedRegionAndRoleType} from "./UserWithIncludeDataType.ts";
+import {AnnouncementType} from "./AnnouncementType.js";
+import {VehicleType} from "./VehicleType.js";
+import {UserWithIncludedRegionAndRoleType} from "./UserWithIncludeDataType.js";
 
 type ListReturnType<T> = [T[], number]
 

@@ -1,4 +1,4 @@
-import {RegexBuilder} from "../../regExp/regExp.ts";
+import {RegexBuilder} from "../../regExp/regExp.js";
 
 export const DealershipRegexpEnum = {
     NAME: new RegexBuilder().withCyrillic().withLatin().withSymbols(`'"`).withSpace().build(),

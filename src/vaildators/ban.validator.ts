@@ -1,5 +1,5 @@
 import joi from "joi";
-import {BanRegexpEnum} from "../enums/userEnums/user.ban.regexp.enum.ts";
+import {BanRegexpEnum} from "../enums/userEnums/user.ban.regexp.enum.js";
 
 export class BanValidator{
     private static time = joi.string().pattern(BanRegexpEnum.TIME).messages({

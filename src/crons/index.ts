@@ -1,6 +1,6 @@
-import {calculateAveragePriceCron} from "./average.price.cron.ts";
-import {removeOldTokensCron} from "./old.tokens.cron.ts";
-import {averageRatingCron} from "./dealership.rating.cron.ts";
+import {calculateAveragePriceCron} from "./average.price.cron.js";
+import {removeOldTokensCron} from "./old.tokens.cron.js";
+import {averageRatingCron} from "./dealership.rating.cron.js";
 
 export const cronRunner = () => {
     console.log("cronRunner started!")

@@ -1,9 +1,9 @@
 import {Router} from "express";
-import {subscriptionPlanController} from "../controllers/subscription.plan.controller.ts";
-import {commonMiddleware} from "../middlewares/common.middleware.ts";
-import {SubscriptionPlan} from "../../prisma/src/generated/prisma/client.ts";
-import {subscriptionPlanService} from "../services/subscription.plan.service.ts";
-import {strictAuthMiddleware} from "../middlewares/strict.auth.middleware.ts";
+import {subscriptionPlanController} from "../controllers/subscription.plan.controller.js";
+import {commonMiddleware} from "../middlewares/common.middleware.js";
+import {SubscriptionPlan} from "../../prisma/src/generated/prisma/client.js";
+import {subscriptionPlanService} from "../services/subscription.plan.service.js";
+import {strictAuthMiddleware} from "../middlewares/strict.auth.middleware.js";
 
 const router = Router()
 

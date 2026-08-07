@@ -1,6 +1,6 @@
-import {TokenPairType} from "../types/TokenType.ts";
-import {UserQueryType} from "../types/QueryType.ts";
-import {UserWithIncludedRegionAndRoleType} from "../types/UserWithIncludeDataType.ts";
+import {TokenPairType} from "../types/TokenType.js";
+import {UserQueryType} from "../types/QueryType.js";
+import {UserWithIncludedRegionAndRoleType} from "../types/UserWithIncludeDataType.js";
 
 class UserPresenter{
     public async list(

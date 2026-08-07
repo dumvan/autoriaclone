@@ -1,9 +1,9 @@
 import {Router} from "express";
-import {vehicleController} from "../controllers/vehicle.controller.ts";
-import {commonMiddleware} from "../middlewares/common.middleware.ts";
-import {QueryValidator} from "../vaildators/query.validator.ts";
-import {vehicleService} from "../services/vehicle.service.ts";
-import {MakeType} from "../types/VehicleType.ts";
+import {vehicleController} from "../controllers/vehicle.controller.js";
+import {commonMiddleware} from "../middlewares/common.middleware.js";
+import {QueryValidator} from "../vaildators/query.validator.js";
+import {vehicleService} from "../services/vehicle.service.js";
+import {MakeType} from "../types/VehicleType.js";
 
 const router = Router()
 

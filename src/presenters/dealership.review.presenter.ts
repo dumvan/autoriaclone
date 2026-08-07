@@ -1,9 +1,9 @@
-import {DealershipReviewType} from "../types/DealershipReviewType.ts";
-import {userService} from "../services/user.service.ts";
-import {userPresenter} from "./user.presenter.ts";
-import {DealershipReviewQueryType} from "../types/QueryType.ts";
-import {dealerShipService} from "../services/dealership.service.ts";
-import {dealershipPresenter} from "./dealership.presenter.ts";
+import {DealershipReviewType} from "../types/DealershipReviewType.js";
+import {userService} from "../services/user.service.js";
+import {userPresenter} from "./user.presenter.js";
+import {DealershipReviewQueryType} from "../types/QueryType.js";
+import {dealerShipService} from "../services/dealership.service.js";
+import {dealershipPresenter} from "./dealership.presenter.js";
 
 class DealershipReviewPresenter{
     private async list(

@@ -1,4 +1,4 @@
-import {BaseType} from "./BaseType.ts";
+import {BaseType} from "./BaseType.js";
 
 type ReportedVehicleModelType = {
     model_name: string,

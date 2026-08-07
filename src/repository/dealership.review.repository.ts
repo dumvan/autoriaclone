@@ -1,10 +1,10 @@
-import {DealershipReviewCreateWithUniqueFieldsDTOType, DealershipReviewType} from "../types/DealershipReviewType.ts";
-import {DealershipReview} from "../models/mongoose/dealershipReview.model.ts";
-import {DealershipReviewQueryType} from "../types/QueryType.ts";
-import {SortQuery} from "../types/SortQuery.ts";
-import {DealershipReviewOrderByEnum} from "../enums/dealershipReviewsEnums/dealership.review.orderBy.enum.ts";
+import {DealershipReviewCreateWithUniqueFieldsDTOType, DealershipReviewType} from "../types/DealershipReviewType.js";
+import {DealershipReview} from "../models/mongoose/dealershipReview.model.js";
+import {DealershipReviewQueryType} from "../types/QueryType.js";
+import {SortQuery} from "../types/SortQuery.js";
+import {DealershipReviewOrderByEnum} from "../enums/dealershipReviewsEnums/dealership.review.orderBy.enum.js";
 import {FilterQuery, isObjectIdOrHexString} from "mongoose";
-import {DealershipMember} from "../models/mongoose/dealershipMember.model.ts";
+import {DealershipMember} from "../models/mongoose/dealershipMember.model.js";
 import {ObjectId} from "mongodb";
 
 class DealershipReviewRepository{

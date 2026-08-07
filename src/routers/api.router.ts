@@ -1,13 +1,13 @@
 import {Router} from "express";
-import {userRouter} from "./user.router.ts";
-import {authRouter} from "./auth.router.ts";
-import {announcementRouter} from "./announcement.router.ts";
-import {subscriptionPlanRouter} from "./subscription.plan.router.ts";
-import {regionRouter} from "./region.router.ts";
-import {dealershipRouter} from "./dealership.router.ts";
-import {adminRouter} from "./admin/admin.index.router.ts";
-import {vehicleRouter} from "./vehicle.router.ts";
-import {reportedVehicleRouter} from "./reported.vehicle.router.ts";
+import {userRouter} from "./user.router.js";
+import {authRouter} from "./auth.router.js";
+import {announcementRouter} from "./announcement.router.js";
+import {subscriptionPlanRouter} from "./subscription.plan.router.js";
+import {regionRouter} from "./region.router.js";
+import {dealershipRouter} from "./dealership.router.js";
+import {adminRouter} from "./admin/admin.index.router.js";
+import {vehicleRouter} from "./vehicle.router.js";
+import {reportedVehicleRouter} from "./reported.vehicle.router.js";
 
 const router = Router()
 

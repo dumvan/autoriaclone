@@ -1,11 +1,11 @@
-import {DealershipMemberAddDTOType, DealershipMemberType, DealershipMemberUpdateDTOType} from "../types/DealershipMemberType.ts";
-import {dealershipMemberRepository} from "../repository/dealership.member.repository.ts";
-import {userService} from "./user.service.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {DEALERSHIP_ROLE_PERMISSIONS, DealershipMemberPermissionsEnum} from "../constants/dealership.member.role.permissions.ts";
-import {AdminRoleEnums} from "../enums/adminEnums/admin.role.enums.ts";
-import {DealershipMemberQueryType} from "../types/QueryType.ts";
+import {DealershipMemberAddDTOType, DealershipMemberType, DealershipMemberUpdateDTOType} from "../types/DealershipMemberType.js";
+import {dealershipMemberRepository} from "../repository/dealership.member.repository.js";
+import {userService} from "./user.service.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {DEALERSHIP_ROLE_PERMISSIONS, DealershipMemberPermissionsEnum} from "../constants/dealership.member.role.permissions.js";
+import {AdminRoleEnums} from "../enums/adminEnums/admin.role.enums.js";
+import {DealershipMemberQueryType} from "../types/QueryType.js";
 
 class DealershipMemberService{
     public async get(memberId: string){

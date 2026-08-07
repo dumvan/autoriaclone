@@ -1,6 +1,6 @@
-import {BaseQueryType} from "../types/QueryType.ts";
-import {CreateReportedVehicleDTOType, ReportedVehicleType} from "../types/ReportedVehicleType.ts";
-import {ReportedVehicleModel} from "../models/mongoose/reported.vehicle.model.ts";
+import {BaseQueryType} from "../types/QueryType.js";
+import {CreateReportedVehicleDTOType, ReportedVehicleType} from "../types/ReportedVehicleType.js";
+import {ReportedVehicleModel} from "../models/mongoose/reported.vehicle.model.js";
 import {FilterQuery} from "mongoose";
 
 class ReportedVehicleRepository{

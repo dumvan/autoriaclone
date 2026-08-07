@@ -1,20 +1,20 @@
 import mongoose, {model, Query} from "mongoose";
-import {CurrencyEnum} from "../../enums/generalEnums/currency.enum.ts";
-import {AnnouncementType} from "../../types/AnnouncementType.ts";
-import {AnnouncementStatusEnum} from "../../enums/announcementEnums/announcement.status.enum.ts";
-import {s3Service} from "../../services/s3.service.ts";
-import {announcementService} from "../../services/announcement.service.ts";
-import {Dealership} from "./dealership.model.ts";
-import {VehicleTypeEnum} from "../../enums/vehicleEnums/vehicle.type.enum.ts";
-import {TransmissionTypeEnum} from "../../enums/vehicleEnums/transmission.type.enum.ts";
-import {FuelTypeEnum} from "../../enums/vehicleEnums/fuel.type.enum.ts";
-import {EnginePowerUnits} from "../../enums/vehicleEnums/engine.power.units.ts";
-import {FuelConsumptionUnits} from "../../enums/vehicleEnums/fuel.consumption.units.ts";
-import {EngineCapacityUnits} from "../../enums/vehicleEnums/engine.capacity.units.ts";
-import {EnvironmentalStandardEnum} from "../../enums/vehicleEnums/environmental.standard.enum.ts";
-import {DriveTypeEnum} from "../../enums/vehicleEnums/drive.type.enum.ts";
-import {PaintConditionEnum} from "../../enums/vehicleEnums/paint.condition.enum.ts";
-import {TechnicalConditionEnum} from "../../enums/vehicleEnums/technical.condition.enum.ts";
+import {CurrencyEnum} from "../../enums/generalEnums/currency.enum.js";
+import {AnnouncementType} from "../../types/AnnouncementType.js";
+import {AnnouncementStatusEnum} from "../../enums/announcementEnums/announcement.status.enum.js";
+import {s3Service} from "../../services/s3.service.js";
+import {announcementService} from "../../services/announcement.service.js";
+import {Dealership} from "./dealership.model.js";
+import {VehicleTypeEnum} from "../../enums/vehicleEnums/vehicle.type.enum.js";
+import {TransmissionTypeEnum} from "../../enums/vehicleEnums/transmission.type.enum.js";
+import {FuelTypeEnum} from "../../enums/vehicleEnums/fuel.type.enum.js";
+import {EnginePowerUnits} from "../../enums/vehicleEnums/engine.power.units.js";
+import {FuelConsumptionUnits} from "../../enums/vehicleEnums/fuel.consumption.units.js";
+import {EngineCapacityUnits} from "../../enums/vehicleEnums/engine.capacity.units.js";
+import {EnvironmentalStandardEnum} from "../../enums/vehicleEnums/environmental.standard.enum.js";
+import {DriveTypeEnum} from "../../enums/vehicleEnums/drive.type.enum.js";
+import {PaintConditionEnum} from "../../enums/vehicleEnums/paint.condition.enum.js";
+import {TechnicalConditionEnum} from "../../enums/vehicleEnums/technical.condition.enum.js";
 
 export const AnnouncementVehicleSchema = new mongoose.Schema(
     {

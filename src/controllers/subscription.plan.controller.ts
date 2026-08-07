@@ -1,10 +1,10 @@
 import {Request, Response, NextFunction} from "express";
-import {subscriptionPlanService} from "../services/subscription.plan.service.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {SubscriptionPlanCreateInput, SubscriptionPlanUpdateInput} from "../../prisma/src/generated/prisma/models/SubscriptionPlan.ts";
-import {TokenPayloadType} from "../types/TokenType.ts";
-import {subscriptionPurchaseService} from "../services/subscription.purchase.service.ts";
-import {subscriptionPurchasePresenter} from "../presenters/subscription.purchase.presenter.ts";
+import {subscriptionPlanService} from "../services/subscription.plan.service.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {SubscriptionPlanCreateInput, SubscriptionPlanUpdateInput} from "../../prisma/src/generated/prisma/models/SubscriptionPlan.js";
+import {TokenPayloadType} from "../types/TokenType.js";
+import {subscriptionPurchaseService} from "../services/subscription.purchase.service.js";
+import {subscriptionPurchasePresenter} from "../presenters/subscription.purchase.presenter.js";
 
 class SubscriptionPlanController{
     public async get (req: Request, res: Response, next: NextFunction){

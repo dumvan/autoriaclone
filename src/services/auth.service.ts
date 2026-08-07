@@ -1,19 +1,19 @@
-import {UserCreateDTOType} from "../types/UserType.ts";
-import {SignInType, SignResultType} from "../types/AuthType.ts";
-import {passwordService} from "./password.service.ts";
-import {userService} from "./user.service.ts";
-import {tokenService} from "./token.service.ts";
-import {TokenTypeEnum} from "../enums/authEnums/token.type.enum.ts";
-import {tokenRepository} from "../repository/token.repository.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {TokenPairType, TokenPayloadType} from "../types/TokenType.ts";
-import {emailService} from "./email.service.ts";
-import {EmailEnum} from "../enums/generalEnums/email.enum.ts";
-import {configs} from "../configs/configs.ts";
-import {userRepository} from "../repository/user.repository.ts";
-import {GlobalRoleEnums} from "../enums/globalRoleEnums/globalRoleEnums.ts";
-import {UserWithIncludedRegionAndRoleType} from "../types/UserWithIncludeDataType.ts";
+import {UserCreateDTOType} from "../types/UserType.js";
+import {SignInType, SignResultType} from "../types/AuthType.js";
+import {passwordService} from "./password.service.js";
+import {userService} from "./user.service.js";
+import {tokenService} from "./token.service.js";
+import {TokenTypeEnum} from "../enums/authEnums/token.type.enum.js";
+import {tokenRepository} from "../repository/token.repository.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {TokenPairType, TokenPayloadType} from "../types/TokenType.js";
+import {emailService} from "./email.service.js";
+import {EmailEnum} from "../enums/generalEnums/email.enum.js";
+import {configs} from "../configs/configs.js";
+import {userRepository} from "../repository/user.repository.js";
+import {GlobalRoleEnums} from "../enums/globalRoleEnums/globalRoleEnums.js";
+import {UserWithIncludedRegionAndRoleType} from "../types/UserWithIncludeDataType.js";
 
 class AuthService{
 

@@ -1,15 +1,15 @@
-import {TransmissionTypeEnum} from "../enums/vehicleEnums/transmission.type.enum.ts";
-import {FuelTypeEnum} from "../enums/vehicleEnums/fuel.type.enum.ts";
-import {EnvironmentalStandardEnum} from "../enums/vehicleEnums/environmental.standard.enum.ts";
-import {DriveTypeEnum} from "../enums/vehicleEnums/drive.type.enum.ts";
-import {PaintConditionEnum} from "../enums/vehicleEnums/paint.condition.enum.ts";
-import {TechnicalConditionEnum} from "../enums/vehicleEnums/technical.condition.enum.ts";
+import {TransmissionTypeEnum} from "../enums/vehicleEnums/transmission.type.enum.js";
+import {FuelTypeEnum} from "../enums/vehicleEnums/fuel.type.enum.js";
+import {EnvironmentalStandardEnum} from "../enums/vehicleEnums/environmental.standard.enum.js";
+import {DriveTypeEnum} from "../enums/vehicleEnums/drive.type.enum.js";
+import {PaintConditionEnum} from "../enums/vehicleEnums/paint.condition.enum.js";
+import {TechnicalConditionEnum} from "../enums/vehicleEnums/technical.condition.enum.js";
 import joi from "joi";
-import {VehicleTypeEnum} from "../enums/vehicleEnums/vehicle.type.enum.ts";
-import {VehicleRegexpEnum} from "../enums/vehicleEnums/vehicle.regexp.enum.ts";
-import {EngineCapacityUnits} from "../enums/vehicleEnums/engine.capacity.units.ts";
-import {FuelConsumptionUnits} from "../enums/vehicleEnums/fuel.consumption.units.ts";
-import {EnginePowerUnits} from "../enums/vehicleEnums/engine.power.units.ts";
+import {VehicleTypeEnum} from "../enums/vehicleEnums/vehicle.type.enum.js";
+import {VehicleRegexpEnum} from "../enums/vehicleEnums/vehicle.regexp.enum.js";
+import {EngineCapacityUnits} from "../enums/vehicleEnums/engine.capacity.units.js";
+import {FuelConsumptionUnits} from "../enums/vehicleEnums/fuel.consumption.units.js";
+import {EnginePowerUnits} from "../enums/vehicleEnums/engine.power.units.js";
 
 export class VehicleValidator{
     private static fuelConsumption = joi.object({

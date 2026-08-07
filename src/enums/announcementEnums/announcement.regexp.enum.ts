@@ -1,4 +1,4 @@
-import {RegexBuilder} from "../../regExp/regExp.ts";
+import {RegexBuilder} from "../../regExp/regExp.js";
 
 export const AnnouncementRegexpEnum = {
     TITLE: new RegexBuilder(3, 100).withLatin().withCyrillic().withNumbers().withSpace().build(),

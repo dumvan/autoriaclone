@@ -1,6 +1,6 @@
-import {configs} from "../configs/configs.ts";
+import {configs} from "../configs/configs.js";
 import {DeleteObjectCommand, PutObjectCommand, S3Client} from "@aws-sdk/client-s3";
-import {FileItemTypeEnum} from "../enums/generalEnums/FileEnum.ts";
+import {FileItemTypeEnum} from "../enums/generalEnums/FileEnum.js";
 import {randomUUID} from "node:crypto";
 import {UploadedFile} from "express-fileupload";
 import path from "node:path";

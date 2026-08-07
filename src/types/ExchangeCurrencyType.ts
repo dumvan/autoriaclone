@@ -1,4 +1,4 @@
-import {CurrencyEnum} from "../enums/generalEnums/currency.enum.ts";
+import {CurrencyEnum} from "../enums/generalEnums/currency.enum.js";
 
 type ExchangeCurrencyType = {
   ccy: Exclude<CurrencyEnum, 'UAH'>;

@@ -1,11 +1,11 @@
 import {Router} from "express";
-import {userController} from "../controllers/user.controller.ts";
-import {commonMiddleware} from "../middlewares/common.middleware.ts";
-import {UserValidator} from "../vaildators/user.validator.ts";
-import {QueryValidator} from "../vaildators/query.validator.ts";
-import {fileMiddleware} from "../middlewares/file.middleware.ts";
-import {avatarConfig} from "../constants/avatar.constants.ts";
-import {strictAuthMiddleware} from "../middlewares/strict.auth.middleware.ts";
+import {userController} from "../controllers/user.controller.js";
+import {commonMiddleware} from "../middlewares/common.middleware.js";
+import {UserValidator} from "../vaildators/user.validator.js";
+import {QueryValidator} from "../vaildators/query.validator.js";
+import {fileMiddleware} from "../middlewares/file.middleware.js";
+import {avatarConfig} from "../constants/avatar.constants.js";
+import {strictAuthMiddleware} from "../middlewares/strict.auth.middleware.js";
 
 const router = Router()
 

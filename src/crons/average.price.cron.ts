@@ -1,10 +1,10 @@
-import {announcementRepository} from "../repository/announcement.repository.ts";
-import {Utils} from "../utils/utils.ts";
-import {averagePricesRepository} from "../repository/average.price.repository.ts";
+import {announcementRepository} from "../repository/announcement.repository.js";
+import {Utils} from "../utils/utils.js";
+import {averagePricesRepository} from "../repository/average.price.repository.js";
 import {CronJob} from "cron";
-import {CurrencyEnum} from "../enums/generalEnums/currency.enum.ts";
-import Decimal from "decimal.js";
-import {ExchangeRateResultType} from "../types/ExchangeRateResultType.ts";
+import {CurrencyEnum} from "../enums/generalEnums/currency.enum.js";
+import {Decimal} from "decimal.js";
+import {ExchangeRateResultType} from "../types/ExchangeRateResultType.js";
 
 const calculateAveragePriceHandler = async() => {
     try{

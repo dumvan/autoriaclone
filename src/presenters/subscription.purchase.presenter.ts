@@ -1,8 +1,8 @@
-import {SubscriptionPurchase} from "../../prisma/src/generated/prisma/client.ts";
-import {SubscriptionPurchaseGetPayload} from "../../prisma/src/generated/prisma/models/SubscriptionPurchase.ts";
-import {subscriptionPlanPresenter} from "./subscription.plan.presenter.ts";
-import {userPresenter} from "./user.presenter.ts";
-import {SubscriptionPurchaseWithPlanAndUserType} from "../repository/subscription.purchase.repository.ts";
+import {SubscriptionPurchase} from "../../prisma/src/generated/prisma/client.js";
+import {SubscriptionPurchaseGetPayload} from "../../prisma/src/generated/prisma/models/SubscriptionPurchase.js";
+import {subscriptionPlanPresenter} from "./subscription.plan.presenter.js";
+import {userPresenter} from "./user.presenter.js";
+import {SubscriptionPurchaseWithPlanAndUserType} from "../repository/subscription.purchase.repository.js";
 
 class SubscriptionPurchasePresenter{
     public res(subscriptionPurchase: SubscriptionPurchase){

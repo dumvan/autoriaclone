@@ -1,10 +1,10 @@
 import {NextFunction, Request, Response} from "express";
-import {ApiError} from "../errors/api.error.ts";
-import {tokenService} from "../services/token.service.ts";
-import {TokenTypeEnum} from "../enums/authEnums/token.type.enum.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {RefreshTokenType} from "../types/TokenType.ts";
-import {userService} from "../services/user.service.ts";
+import {ApiError} from "../errors/api.error.js";
+import {tokenService} from "../services/token.service.js";
+import {TokenTypeEnum} from "../enums/authEnums/token.type.enum.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {RefreshTokenType} from "../types/TokenType.js";
+import {userService} from "../services/user.service.js";
 
 
 class StrictAuthMiddleware {

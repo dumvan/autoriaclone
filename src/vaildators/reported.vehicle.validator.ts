@@ -1,5 +1,5 @@
 import joi from "joi";
-import {ReportedVehicleRegexpEnum} from "../enums/reportedVehicleEnums/reported.vehicle.regexp.enum.ts";
+import {ReportedVehicleRegexpEnum} from "../enums/reportedVehicleEnums/reported.vehicle.regexp.enum.js";
 
 export class ReportedVehicleValidator{
     private static make_name = joi.string().pattern(ReportedVehicleRegexpEnum.MAKE_NAME).trim().uppercase()

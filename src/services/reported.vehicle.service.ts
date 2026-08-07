@@ -1,9 +1,9 @@
-import {BaseQueryType} from "../types/QueryType.ts";
-import {reportedVehicleRepository} from "../repository/reported.vehicle.repository.ts";
-import {CreateReportedVehicleDTOType, ReportedVehicleType} from "../types/ReportedVehicleType.ts";
-import {vehicleRepository} from "../repository/vehicle.repository.ts";
-import {ApiError} from "../errors/api.error.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
+import {BaseQueryType} from "../types/QueryType.js";
+import {reportedVehicleRepository} from "../repository/reported.vehicle.repository.js";
+import {CreateReportedVehicleDTOType, ReportedVehicleType} from "../types/ReportedVehicleType.js";
+import {vehicleRepository} from "../repository/vehicle.repository.js";
+import {ApiError} from "../errors/api.error.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
 
 class ReportedVehicleService{
     public async get(id: string): Promise<ReportedVehicleType>{

@@ -1,7 +1,7 @@
 import joi from "joi";
-import {UserRegexpEnum} from "../enums/userEnums/user.regexp.enum.ts";
-import {DealershipRoleEnum} from "../enums/vehicleEnums/dealership.enum.ts";
-import {userService} from "../services/user.service.ts";
+import {UserRegexpEnum} from "../enums/userEnums/user.regexp.enum.js";
+import {DealershipRoleEnum} from "../enums/vehicleEnums/dealership.enum.js";
+import {userService} from "../services/user.service.js";
 
 export class DealershipMemberValidator{
     private static email = joi.string().regex(UserRegexpEnum.EMAIL).email({minDomainSegments: 2, tlds: { allow: ['com', 'net'] }}).trim().external(async (value, helper) => {

@@ -1,5 +1,5 @@
 import {model, Schema} from "mongoose";
-import {ReportedVehicleType} from "../../types/ReportedVehicleType.ts";
+import {ReportedVehicleType} from "../../types/ReportedVehicleType.js";
 
 const ReportedVehicleSchema = new Schema(
     {

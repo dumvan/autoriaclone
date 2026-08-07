@@ -1,4 +1,4 @@
-import type {Token} from "../../prisma/src/generated/prisma/client.ts"
+import type {Token} from "../../prisma/src/generated/prisma/client.js"
 
 type TokenPairType = Pick<Token, "refresh_token" | "access_token">
 type RefreshTokenType = {refreshToken: string}

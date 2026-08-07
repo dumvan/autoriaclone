@@ -1,6 +1,6 @@
-import {prisma} from "../../prisma/prisma.client.ts";
-import {AnnouncementViewsDay} from "../../prisma/src/generated/prisma/client.ts";
-import {TimeHelper} from "../timeHelper/time.helper.ts";
+import {prisma} from "../../prisma/prisma.client.js";
+import {AnnouncementViewsDay} from "../../prisma/src/generated/prisma/client.js";
+import {TimeHelper} from "../timeHelper/time.helper.js";
 
 class AnnouncementViewsDayRepository{
 

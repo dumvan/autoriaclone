@@ -1,6 +1,6 @@
 import joi from "joi";
-import {subscriptionPlanService} from "../services/subscription.plan.service.ts";
-import {CurrencyEnum} from "../enums/generalEnums/currency.enum.ts";
+import {subscriptionPlanService} from "../services/subscription.plan.service.js";
+import {CurrencyEnum} from "../enums/generalEnums/currency.enum.js";
 
 export class SubscriptionPlanValidator {
     private static price = joi.number().min(0)

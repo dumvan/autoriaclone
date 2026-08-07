@@ -1,4 +1,4 @@
-import {RegexBuilder} from "../../regExp/regExp.ts";
+import {RegexBuilder} from "../../regExp/regExp.js";
 
 export const VehicleRegexpEnum = {
     BRAND: new RegexBuilder().withLatin().withCyrillic().build(),

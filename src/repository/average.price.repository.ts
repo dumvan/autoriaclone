@@ -1,6 +1,6 @@
-import {AveragePricesCreateInput, AveragePricesWhereInput} from "../../prisma/src/generated/prisma/models/AveragePrices.ts";
-import {prisma} from "../../prisma/prisma.client.ts";
-import {AveragePrices} from "../../prisma/src/generated/prisma/client.ts";
+import {AveragePricesCreateInput, AveragePricesWhereInput} from "../../prisma/src/generated/prisma/models/AveragePrices.js";
+import {prisma} from "../../prisma/prisma.client.js";
+import {AveragePrices} from "../../prisma/src/generated/prisma/client.js";
 import {Decimal} from "@prisma/client/runtime/client";
 
 class AveragePriceRepository{

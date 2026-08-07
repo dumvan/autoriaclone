@@ -1,6 +1,6 @@
 import mongoose, {model} from "mongoose";
-import {Dealership} from "./dealership.model.ts";
-import {DealershipReviewType} from "../../types/DealershipReviewType.ts";
+import {Dealership} from "./dealership.model.js";
+import {DealershipReviewType} from "../../types/DealershipReviewType.js";
 
 const DealershipReviewSchema = new mongoose.Schema(
     {

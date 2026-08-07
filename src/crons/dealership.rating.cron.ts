@@ -1,5 +1,5 @@
-import {dealershipMemberRepository} from "../repository/dealership.member.repository.ts";
-import {dealershipRepository} from "../repository/dealership.repository.ts";
+import {dealershipMemberRepository} from "../repository/dealership.member.repository.js";
+import {dealershipRepository} from "../repository/dealership.repository.js";
 import {CronJob} from "cron";
 
 const averageRatingHandler = async () => {

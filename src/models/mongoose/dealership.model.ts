@@ -1,7 +1,7 @@
 import mongoose, {model, Query} from "mongoose";
-import {DealershipType} from "../../types/DealershipType.ts";
-import {dealershipMemberRepository} from "../../repository/dealership.member.repository.ts";
-import {dealershipReviewRepository} from "../../repository/dealership.review.repository.ts";
+import {DealershipType} from "../../types/DealershipType.js";
+import {dealershipMemberRepository} from "../../repository/dealership.member.repository.js";
+import {dealershipReviewRepository} from "../../repository/dealership.review.repository.js";
 
 const DealershipSchema = new mongoose.Schema(
     {

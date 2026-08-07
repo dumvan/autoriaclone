@@ -1,4 +1,4 @@
-import {RegexBuilder} from "../../regExp/regExp.ts";
+import {RegexBuilder} from "../../regExp/regExp.js";
 
 export const UserRegexpEnum = {
     NAME: new RegexBuilder().withLatin().withCyrillic().withSymbols("-").build(),

@@ -1,10 +1,10 @@
 import type {NextFunction, Request, Response} from "express";
-import {ApiError} from "../errors/api.error.ts";
-import {userService} from "../services/user.service.ts";
-import type {UserCreateDTOType} from "../types/UserType.ts";
-import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.ts";
-import {TokenPayloadType} from "../types/TokenType.ts";
-import {AccountTypeEnum} from "../../prisma/src/generated/prisma/enums.ts";
+import {ApiError} from "../errors/api.error.js";
+import {userService} from "../services/user.service.js";
+import type {UserCreateDTOType} from "../types/UserType.js";
+import {StatusCodeEnum} from "../enums/generalEnums/status.code.enum.js";
+import {TokenPayloadType} from "../types/TokenType.js";
+import {AccountTypeEnum} from "../../prisma/src/generated/prisma/enums.js";
 
 class UserMiddleware{
     public async checkEmailTaken(req: Request, res: Response, next: NextFunction){
