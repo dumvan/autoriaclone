@@ -1,85 +1,95 @@
 # Autoriaclone API
 
-Серверна частина (Backend) веб-платформи для продажу та купівлі транспортних засобів. Проєкт реалізує REST API архітектуру для взаємодії між клієнтською частиною та базою даних.
+Backend service for a vehicle marketplace web platform. The project implements a REST API architecture to handle communication between client applications and databases.
 
-## Стек технологій
+## Tech Stack
 
-**Основні:**
-* **Node.js** — середовище виконання JavaScript.
-* **TypeScript** — типізована надбудова над JavaScript для підвищення надійності коду.
-* **Express.js** — веб-фреймворк для створення API.
+**Core:**
 
-**База даних:**
-* **MongoDB (Atlas)** — хмарна NoSQL база даних.
-* **Mongoose** — ODM бібліотека для роботи з MongoDB.
-* **MySQL (Aiven)**- хмарний SQL база даних
-* **Prisma** — ORM бібліотека для роботи з MySQL.
+* **Node.js** — JavaScript runtime environment.
+* **TypeScript** — Typed superset of JavaScript for enhanced code reliability.
+* **Express.js** — Web framework for building APIs.
 
-**Інфраструктура та інструменти:**
-* **Docker** — контейнеризація застосунку.
-* **AWS Elastic Beanstalk** — сервіс для розгортання та масштабування веб-застосунків.
+**Databases & ORM/ODM:**
 
-## Функціональні модулі
+* **MongoDB (Atlas)** — Cloud NoSQL database.
+* **Mongoose** — ODM library for MongoDB.
+* **MySQL (Aiven)** — Cloud SQL database.
+* **Prisma** — ORM library for MySQL.
 
-Система побудована на рольовій моделі доступу (RBAC) з чотирма типами користувачів: Покупець, Продавець, Менеджер, Адміністратор.
+**Infrastructure & Tools:**
 
-Основні реалізовані можливості:
-1.  **Автентифікація та Авторизація:** Реєстрація, вхід, розмежування прав доступу.
-2.  **Оголошення (Ads):** CRUD операції для транспортних засобів, фільтрація, пагінація.
-3.  **Аналітика:** Збір статистики переглядів для преміум-оголошень.
-4.  **Підписки:** Можливість придбати підписку для отримання більших можливостей.
-5.  **Модерація:** Перевірка оголошень системою перед публікацією; контроль менеджерів за оголошеннями.
-6.  **Адміністрування:** Повне керування користувачами та контентом платформи.
+* **Docker** — Application containerization.
+* **AWS Elastic Beanstalk** — Cloud service for deployment and scaling.
 
-## Інструкція із запуску (Local)
+## Features & Modules
 
-Для запуску проєкту локально необхідно мати встановлений Node.js (v18 або вище).
+The system uses Role-Based Access Control (RBAC) with four user roles: Buyer, Seller, Manager, and Administrator.
 
-**1.** Клонувати репозиторій:
-```
+Key features:
+
+1. **Authentication & Authorization:** Registration, login, and permission management.
+2. **Announcements:** Full CRUD operations for vehicles, filtering, and pagination.
+3. **Analytics:** View statistics tracking for premium accounts.
+4. **Subscriptions:** Tiered subscription plans unlocking advanced seller capabilities.
+5. **Moderation:** Automated announcement checks before publication, alongside manual manager oversight.
+6. **Administration:** Comprehensive platform control over users and content.
+
+## Local Setup & Installation
+
+**Prerequisites:** Node.js (v18 or higher)
+
+**1. Clone the repository and navigate to the project directory:**
+
+```bash
 git clone https://github.com/St1ve42/autoriaclone.git
 cd autoriaclone
+
 ```
-**2.** Завантажити залежності:
-```
-npm i
-```
-або
-```
+
+**2. Install dependencies:**
+
+```bash
 npm install
+
 ```
-**3.** Налаштувати змінні оточення за зразком файлу: .env.example
 
-**4.** Для запуску проєкту в режимі розробника:
+**3. Configure environment variables:**
+Create a `.env` file based on `.env.example` and set your credentials.
 
+**4. Run the project:**
 
-**4.** Запуск проєкту:
+Development mode:
 
-Режим розробки (Development):
-```
+```bash
 npm run start:dev
-```
-
-Збірка та запуск продакшн-версії (Production):
 
 ```
+
+Production build & run:
+
+```bash
 npm run build
 npm run start
+
 ```
 
-Особливості тестування (Активація акаунту)
+## Testing Notes (Account Activation)
 
-Оскільки проєкт реалізує виключно Backend-частину, процес активації користувача через email має певні особливості:
+Because this repository provides only the backend service without a frontend client, email verification works as follows:
 
-1.  Після реєстрації (`/auth/sign-up`) на вказану пошту прийде лист із посиланням.
-2.  **Важливо:** Оскільки веб-інтерфейс (Frontend) відсутній, клік по посиланню не відкриє сторінку в браузері коректно.
-3.  **Для активації:**
-    * Скопіюйте **токен** з посилання в листі (або повне посилання).
-    * Вставте його в Postman.
-    * Виконайте **POST** запит за адресою: `/auth/activate/:token`.
+1. After registering via `/auth/sign-up`, an activation link is sent to the provided email.
+2. Direct browser clicks will not render a webpage due to the absence of a client UI.
+3. **To complete activation:**
+* Copy the **token** from the activation URL in the email.
+* Send a **POST** request via Postman (or cURL) to: `/auth/activate/:token`.
 
-## Postman колекція
-Посилання: https://www.postman.com/cryosat-astronomer-37024884-1799691/workspace/autoriaclone
 
-## Swagger документація
-На localhost документація доступна за шляхом /docs 
+
+## Postman Collection
+
+[View Postman Collection & Workspace](https://www.postman.com/cryosat-astronomer-37024884-1799691/workspace/autoriaclone)
+
+## Swagger Documentation
+
+When running locally, interactive API docs are available at `/docs`.
