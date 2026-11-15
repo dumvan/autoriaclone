@@ -42,7 +42,7 @@ Key features:
 **1. Clone the repository and navigate to the project directory:**
 
 ```bash
-git clone https://github.com/St1ve42/autoriaclone.git
+git clone https://github.com/dumvan/autoriaclone.git
 cd autoriaclone
 
 ```
